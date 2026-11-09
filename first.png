@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {"on-tertiary-container": "#000703", "surface-container": "#171f33", "inverse-surface": "#dae2fd", "tertiary-fixed": "#6ffbbe", secondary: "#4cd7f6", "on-surface-variant": "#c7c4d7", "secondary-fixed-dim": "#4cd7f6", "on-tertiary": "#003824", "surface-container-low": "#131b2e", "tertiary-fixed-dim": "#4edea3", "surface-tint": "#c0c1ff", "error-container": "#93000a", error: "#ffb4ab", "surface-variant": "#2d3449", "on-secondary-fixed-variant": "#004e5c", "surface-container-highest": "#2d3449", "on-tertiary-fixed-variant": "#005236", "on-secondary-fixed": "#001f26", "on-background": "#dae2fd", "surface-dim": "#0b1326", "outline-variant": "#464554", "on-primary-container": "#0d0096", primary: "#c0c1ff", background: "#0b1326", "tertiary-container": "#00885d", surface: "#0b1326", "primary-fixed": "#e1e0ff", "inverse-on-surface": "#283044", "on-secondary-container": "#00424e", "on-surface": "#dae2fd", "secondary-fixed": "#acedff", "on-tertiary-fixed": "#002113", "primary-fixed-dim": "#c0c1ff", "on-error": "#690005", "on-primary-fixed": "#07006c", "surface-container-high": "#222a3d", "surface-container-lowest": "#060e20", "on-error-container": "#ffdad6", "on-secondary": "#003640", "primary-container": "#8083ff", "inverse-primary": "#494bd6", tertiary: "#4edea3", "on-primary": "#1000a9", "surface-bright": "#31394d", outline: "#908fa0", "on-primary-fixed-variant": "#2f2ebe", "secondary-container": "#03b5d3"}, borderRadius: {DEFAULT: "0.125rem", lg: "0.25rem", xl: "0.5rem", full: "0.75rem"}, spacing: {gutter: "1rem", "space-xs": "0.25rem", "space-xl": "2rem", "space-sm": "0.5rem", margin: "1.5rem", "space-lg": "1.25rem", "space-md": "0.75rem"}, fontFamily: {"headline-sm": ["Plus Jakarta Sans"], "label-caps": ["JetBrains Mono"], "body-md": ["Inter"], "body-lg": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "code-lg": ["JetBrains Mono"], "code-sm": ["JetBrains Mono"], "code-md": ["JetBrains Mono"], "body-sm": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], headline: ["Plus Jakarta Sans"], display: ["Plus Jakarta Sans"], body: ["Inter"], label: ["JetBrains Mono"]}, fontSize: {"headline-sm": ["18px", {lineHeight: "26px", letterSpacing: "-0.01em", fontWeight: "600"}], "label-caps": ["10px", {lineHeight: "12px", letterSpacing: "0.08em", fontWeight: "600"}], "body-md": ["14px", {lineHeight: "20px", letterSpacing: "0em", fontWeight: "400"}], "body-lg": ["16px", {lineHeight: "24px", letterSpacing: "-0.01em", fontWeight: "400"}], "headline-md": ["22px", {lineHeight: "30px", letterSpacing: "-0.015em", fontWeight: "600"}], "code-lg": ["14px", {lineHeight: "20px", letterSpacing: "-0.01em", fontWeight: "500"}], "code-sm": ["11px", {lineHeight: "14px", letterSpacing: "0.02em", fontWeight: "400"}], "code-md": ["12px", {lineHeight: "16px", letterSpacing: "0em", fontWeight: "500"}], "body-sm": ["12px", {lineHeight: "18px", letterSpacing: "0.01em", fontWeight: "400"}], "headline-lg": ["30px", {lineHeight: "38px", letterSpacing: "-0.02em", fontWeight: "700"}], "display-lg": ["40px", {lineHeight: "48px", letterSpacing: "-0.03em", fontWeight: "700"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.35)]"><div class="h-16 w-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md flex-shrink-0"><div class="flex items-center gap-space-sm"><img alt="InternTrack Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UgqWSBiplGO6KWzuopYcvUkLLJrQ3v5_-BpB_Nr3Pvq4V3bw8vbavoXTw6jRp_dOPnJxIMTZM8jBmzeFP5VfJJNNtVC1bD972I83CVpYKuvhq0EtGhHoxvIPufNv3AUf_yaBidEQNjh8TMIE5VCG-Mhuw5_LeiU5P9rM9hITjeToxXl4hIzZCG61Va1EOmsB4pD4utqmfQfDR11WU6LQq6tf8C8njjWBSF2TU-w9eOej7hk9L-lW2abYLp"/><span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">InternTrack</span></div><div class="hidden sm:inline-flex items-center px-space-sm py-space-xs rounded-full bg-surface-container-high border border-outline-variant/40"><span class="font-code-sm text-code-sm text-tertiary font-medium">FAANG 2025</span></div></div><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-semibold rounded-lg shadow-[0_0_12px_rgba(128,131,255,0.3)]"><a aria-current="page" class="px-space-md py-space-sm transition-colors bg-primary-container text-on-primary font-semibold rounded-lg shadow-[0_0_12px_rgba(128,131,255,0.3)]" data-path="deadlines-hub" href="#">Deadlines Hub</a><a class="px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="company-guides" href="#">Company Guides</a><a class="px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="standout-projects" href="#">Standout Projects</a><a class="px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="my-applications" href="#">My Applications</a></nav><div class="flex items-center gap-space-sm flex-1 max-w-xl justify-end"><div class="relative w-full max-w-xs hidden md:block"><span class="material-symbols-outlined absolute left-2.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-base select-none pointer-events-none">search</span><input class="w-full pl-8 pr-space-sm py-1.5 bg-surface-container-lowest text-on-surface placeholder:text-outline border border-outline-variant/50 rounded-lg font-code-sm text-code-sm focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-all" placeholder="Search companies, roles (e.g. Google SWE, Kafka)..." type="text"/></div><div class="hidden lg:flex items-center gap-1.5 px-space-sm py-1.5 bg-surface-container-low border border-outline-variant/40 rounded-lg"><span class="w-2 h-2 rounded-full bg-tertiary shadow-[0_0_6px_#4edea3]"></span><span class="font-code-sm text-code-sm text-on-surface">Summer 2025</span><span class="font-label-caps text-label-caps uppercase text-tertiary bg-surface-container px-1 py-0.5 rounded">Active</span><span class="material-symbols-outlined text-on-surface-variant text-sm cursor-pointer">arrow_drop_down</span></div><div class="flex items-center gap-1"><button class="p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg transition-colors flex items-center justify-center" title="Starred Bookmarks" type="button"><span class="material-symbols-outlined text-lg">star</span></button><button class="p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg transition-colors relative flex items-center justify-center" title="Notifications" type="button"><span class="material-symbols-outlined text-lg">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 bg-secondary rounded-full shadow-[0_0_6px_#4cd7f6]"></span></button></div><div class="flex items-center gap-space-sm pl-space-xs border-l border-outline-variant/40"><div class="flex flex-col text-right hidden 2xl:flex"><span class="font-body-sm text-body-sm text-on-surface font-medium leading-none">Alex Chen</span><span class="font-code-sm text-code-sm text-on-surface-variant leading-none mt-1">CS @ Berkeley</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-primary-container/40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3xcZQ_oh54vYggICgfPWIF5X_k7rWXJUIeqolj-Ingd20UgjXTOLoDmGKT0OlTRZuBaS_8beMVJUcJ4ya8XulzsH_5e-kAcpSpkSjSAvKIyt7njxLj2s1HJlcq9OXsOrtGNj7v_XyHYWol_7HjPEeGlcAcQpcBA-DCKqbGy8iM__l-yxZ7cviPZ66LwTrJF4IR3vrQYgNnr5vvu23F6xsPpl3-s_qoN6xxPzmMBHk4tsUcyCkPTgaiw"/></div></div></div></header><main class="w-full pt-16 bg-surface flex-1"><div class="flex flex-col w-full">
+<!-- Subtle Ambient Glow Orbs (Contained) -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-32 left-1/4 w-96 h-96 bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute top-20 right-10 w-80 h-80 bg-secondary/10 rounded-full blur-3xl pointer-events-none"></div>
+<!-- MAIN CONTAINER -->
+<div class="w-full px-gutter py-space-lg flex flex-col gap-space-lg">
+<!-- SUB-NAV / CONTEXT STRIP -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm pb-space-xs">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-surface-container-high text-tertiary font-code-sm text-code-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary shadow-[0_0_8px_#4edea3]"></span>
+            REAL-TIME PIPELINE MONITOR
+          </span>
+<span class="text-outline-variant font-code-sm text-code-sm">•</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Last automated cycle scrape: <span class="text-on-surface font-medium">3 mins ago (US-West node)</span></span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="inline-flex items-center gap-1.5 px-space-md py-1.5 rounded bg-surface-container-high hover:bg-surface-variant text-on-surface font-code-sm text-code-sm transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-sm text-secondary">tune</span>
+<span>Pipeline Config</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-space-md py-1.5 rounded bg-primary-container text-on-primary font-headline-sm text-code-sm font-semibold shadow-[0_0_14px_rgba(128,131,255,0.35)] hover:brightness-110 transition-all" type="button">
+<span class="material-symbols-outlined text-base">download_for_offline</span>
+<span>Export CSV</span>
+</button>
+</div>
+</div>
+<!-- 1. KPI METRIC STRIP (4-Part Terminal Tiles) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Tile 1 -->
+<div class="bg-surface-container-low hover:bg-surface-container transition-all p-space-md rounded-xl shadow-md flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute top-0 left-0 w-1 h-full bg-primary-container"></div>
+<div class="flex items-start justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Active Tracked</span>
+<span class="material-symbols-outlined text-primary text-xl">database</span>
+</div>
+<div class="mt-space-sm flex items-baseline gap-space-sm">
+<span class="font-headline-lg text-headline-lg text-on-surface tracking-tight">142</span>
+<span class="font-code-sm text-code-sm text-tertiary flex items-center font-medium">+12 this wk</span>
+</div>
+<div class="mt-2 flex items-center justify-between text-on-surface-variant font-code-sm text-code-sm">
+<span>Verified 2025 listings</span>
+<span class="text-primary font-medium">98.4% live</span>
+</div>
+</div>
+<!-- Tile 2 -->
+<div class="bg-surface-container-low hover:bg-surface-container transition-all p-space-md rounded-xl shadow-md flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute top-0 left-0 w-1 h-full bg-error"></div>
+<div class="flex items-start justify-between">
+<span class="font-label-caps text-label-caps text-error uppercase tracking-wider">Closing &lt; 7 Days</span>
+<span class="material-symbols-outlined text-error text-xl animate-pulse">timer</span>
+</div>
+<div class="mt-space-sm flex items-baseline gap-space-sm">
+<span class="font-headline-lg text-headline-lg text-on-surface tracking-tight">19</span>
+<span class="font-code-sm text-code-sm text-error flex items-center font-semibold">Priority Action</span>
+</div>
+<div class="mt-2 flex items-center justify-between text-on-surface-variant font-code-sm text-code-sm">
+<span>Netflix, Databricks, Jane St</span>
+<span class="text-error font-medium">Cap risk</span>
+</div>
+</div>
+<!-- Tile 3 -->
+<div class="bg-surface-container-low hover:bg-surface-container transition-all p-space-md rounded-xl shadow-md flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute top-0 left-0 w-1 h-full bg-tertiary"></div>
+<div class="flex items-start justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">FAANG Open Today</span>
+<span class="material-symbols-outlined text-tertiary text-xl">rocket_launch</span>
+</div>
+<div class="mt-space-sm flex items-baseline gap-space-sm">
+<span class="font-headline-lg text-headline-lg text-on-surface tracking-tight">8</span>
+<span class="font-code-sm text-code-sm text-tertiary flex items-center font-medium">+2 newly unlocked</span>
+</div>
+<div class="mt-2 flex items-center justify-between text-on-surface-variant font-code-sm text-code-sm">
+<span>Google, Meta, Apple live</span>
+<span class="text-tertiary font-medium">Wave 01</span>
+</div>
+</div>
+<!-- Tile 4 -->
+<div class="bg-surface-container-low hover:bg-surface-container transition-all p-space-md rounded-xl shadow-md flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute top-0 left-0 w-1 h-full bg-secondary"></div>
+<div class="flex items-start justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Peak Window</span>
+<span class="material-symbols-outlined text-secondary text-xl">analytics</span>
+</div>
+<div class="mt-space-sm flex items-baseline gap-space-sm">
+<span class="font-headline-md text-headline-md text-on-surface tracking-tight">Aug – Oct</span>
+<span class="font-code-sm text-code-sm text-secondary flex items-center">74% of quota</span>
+</div>
+<div class="mt-2 flex items-center justify-between text-on-surface-variant font-code-sm text-code-sm">
+<span>Rolling cadence window</span>
+<span class="text-secondary font-medium">Days left: 68</span>
+</div>
+</div>
+</div>
+<!-- 2. RICH SEARCH & INTERACTIVE FILTER TOOLBAR -->
+<div class="bg-surface-container-low p-space-md rounded-xl shadow-lg flex flex-col gap-space-md">
+<!-- Top Row: Global Search Input + Quick Filters -->
+<div class="flex flex-col lg:flex-row gap-space-sm items-stretch lg:items-center justify-between">
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-lg">search</span>
+<input class="w-full pl-10 pr-space-md py-2.5 bg-surface-container-lowest text-on-surface placeholder:text-outline font-code-sm text-code-sm rounded-lg focus:outline-none focus:ring-1 focus:ring-primary-container shadow-inner" id="role-search" placeholder="Filter by company, role keyword, tech stack (e.g. Go, PyTorch, C++, Distributed)..." type="text"/>
+<span class="hidden sm:inline-block absolute right-3 top-1/2 -translate-y-1/2 px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-code-sm text-code-sm">⌘K</span>
+</div>
+<div class="flex items-center gap-space-xs flex-wrap sm:flex-nowrap">
+<!-- Role Category Dropdown -->
+<div class="relative inline-block text-left">
+<select class="appearance-none bg-surface-container-high text-on-surface pl-3 pr-8 py-2 rounded-lg font-code-sm text-code-sm focus:outline-none focus:ring-1 focus:ring-primary-container cursor-pointer shadow-sm">
+<option selected="">Role: Software Engineering</option>
+<option>Role: AI / ML Engineering</option>
+<option>Role: Systems &amp; Cloud Infrastructure</option>
+<option>Role: Security &amp; Cryptography</option>
+<option>Role: Quantitative Developer</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-on-surface-variant text-base pointer-events-none">expand_more</span>
+</div>
+<!-- Grad Year Dropdown -->
+<div class="relative inline-block text-left">
+<select class="appearance-none bg-surface-container-high text-on-surface pl-3 pr-8 py-2 rounded-lg font-code-sm text-code-sm focus:outline-none focus:ring-1 focus:ring-primary-container cursor-pointer shadow-sm">
+<option selected="">Grad: 2026 / 2027</option>
+<option>Grad: Fall 2025 (New Grad)</option>
+<option>Grad: Undergrad (Any)</option>
+<option>Grad: MS / PhD Specialized</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-on-surface-variant text-base pointer-events-none">expand_more</span>
+</div>
+<!-- Work Auth Badge Toggle -->
+<button class="inline-flex items-center gap-1.5 px-space-md py-2 rounded-lg bg-surface-container-high hover:bg-surface-variant text-secondary font-code-sm text-code-sm transition-colors shadow-sm whitespace-nowrap" type="button">
+<span class="material-symbols-outlined text-sm">verified_user</span>
+<span>US F1-OPT Friendly</span>
+</button>
+<!-- Sort Dropdown -->
+<div class="relative inline-block text-left">
+<select class="appearance-none bg-surface-container-high text-tertiary pl-3 pr-8 py-2 rounded-lg font-code-sm text-code-sm focus:outline-none focus:ring-1 focus:ring-primary-container cursor-pointer shadow-sm font-medium">
+<option selected="">Sort: Deadline (Soonest)</option>
+<option>Sort: Recently Opened</option>
+<option>Sort: Company Tier (FAANG first)</option>
+<option>Sort: Project Fit Match %</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-tertiary text-base pointer-events-none">swap_vert</span>
+</div>
+</div>
+</div>
+<!-- Bottom Row: Company Quick-Pill Scroller -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1 text-on-surface">
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider whitespace-nowrap flex-shrink-0 mr-1">Quick Filter:</span>
+<button class="px-space-md py-1 rounded-full bg-primary-container text-on-primary font-code-sm text-code-sm font-semibold shadow-[0_0_8px_rgba(128,131,255,0.4)] whitespace-nowrap" type="button">
+            All Companies (142)
+          </button>
+<button class="px-space-md py-1 rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface font-code-sm text-code-sm whitespace-nowrap transition-colors flex items-center gap-1.5" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+            Google <span class="text-outline text-[10px]">12</span>
+</button>
+<button class="px-space-md py-1 rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface font-code-sm text-code-sm whitespace-nowrap transition-colors flex items-center gap-1.5" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            Meta <span class="text-outline text-[10px]">8</span>
+</button>
+<button class="px-space-md py-1 rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface font-code-sm text-code-sm whitespace-nowrap transition-colors flex items-center gap-1.5" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-on-surface-variant"></span>
+            Apple <span class="text-outline text-[10px]">5</span>
+</button>
+<button class="px-space-md py-1 rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface font-code-sm text-code-sm whitespace-nowrap transition-colors flex items-center gap-1.5" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+            Amazon <span class="text-outline text-[10px]">18</span>
+</button>
+<button class="px-space-md py-1 rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface font-code-sm text-code-sm whitespace-nowrap transition-colors flex items-center gap-1.5" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+            Netflix <span class="text-outline text-[10px]">2</span>
+</button>
+<button class="px-space-md py-1 rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface font-code-sm text-code-sm whitespace-nowrap transition-colors flex items-center gap-1.5" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            Microsoft <span class="text-outline text-[10px]">14</span>
+</button>
+<button class="px-space-md py-1 rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface font-code-sm text-code-sm whitespace-nowrap transition-colors flex items-center gap-1.5" type="button">
+            Palantir <span class="text-outline text-[10px]">6</span>
+</button>
+<button class="px-space-md py-1 rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface font-code-sm text-code-sm whitespace-nowrap transition-colors flex items-center gap-1.5" type="button">
+            Stripe <span class="text-outline text-[10px]">4</span>
+</button>
+</div>
+</div>
+<!-- 3. MAIN SPLIT WORKSPACE: DATA TABLE + FORECAST INSPECTOR -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT: HIGH-DENSITY INTERNSHIP DATA TABLE (Spans 8 columns on 2xl) -->
+<div class="xl:col-span-8 bg-surface-container-low rounded-xl shadow-xl overflow-hidden flex flex-col">
+<!-- Table Sub-Header Controls -->
+<div class="px-space-md py-space-sm bg-surface-container flex items-center justify-between border-b-0">
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Priority Cycle Openings</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-tertiary font-code-sm text-code-sm font-semibold">Wave 01 Active</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-code-sm text-code-sm">
+<span>Showing 6 of 142</span>
+<button class="p-1 hover:text-on-surface"><span class="material-symbols-outlined text-base">refresh</span></button>
+</div>
+</div>
+<!-- Responsive Table Container -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-lowest text-outline font-label-caps text-label-caps uppercase tracking-wider">
+<th class="py-3 px-space-md font-semibold">Company &amp; Team</th>
+<th class="py-3 px-space-md font-semibold">Location / Policy</th>
+<th class="py-3 px-space-md font-semibold text-right">Opened</th>
+<th class="py-3 px-space-md font-semibold text-right">Deadline Countdown</th>
+<th class="py-3 px-space-md font-semibold">Standout Match Tech Stack</th>
+<th class="py-3 px-space-md font-semibold text-center">Status</th>
+<th class="py-3 px-space-md font-semibold text-right">Quick Action</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface font-body-sm text-body-sm">
+<!-- ROW 1: GOOGLE -->
+<tr class="hover:bg-surface-container transition-colors group cursor-pointer">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center flex-shrink-0 shadow-sm text-primary font-headline-sm font-bold">
+                        G
+                      </div>
+<div class="min-w-0">
+<div class="font-headline-sm text-body-md font-semibold text-on-surface group-hover:text-primary transition-colors flex items-center gap-1.5">
+                          Google
+                          <span class="px-1.5 py-0.2 rounded bg-surface-container-high text-tertiary font-code-sm text-[10px]">FAANG</span>
+</div>
+<div class="text-on-surface-variant text-body-sm truncate">Software Engineering Intern (Summer 2025) • Core Infra</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="text-on-surface">Mountain View, CA / NY</div>
+<div class="font-code-sm text-code-sm text-secondary">Hybrid (3d in-office)</div>
+</td>
+<td class="py-3.5 px-space-md text-right font-code-sm text-code-sm text-on-surface-variant whitespace-nowrap">
+                    July 12
+                  </td>
+<td class="py-3.5 px-space-md text-right whitespace-nowrap">
+<div class="font-code-md text-code-md text-on-surface font-semibold">Aug 31, 2024</div>
+<div class="font-code-sm text-code-sm text-tertiary">Rolling • ~38 days left</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-wrap gap-1 max-w-[220px]">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface font-code-sm text-code-sm">C++</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface font-code-sm text-code-sm">Python</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-secondary font-code-sm text-code-sm">Distributed Sys</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-tertiary-container/30 text-tertiary font-code-sm text-code-sm font-medium">
+<span class="w-2 h-2 rounded-full bg-tertiary shadow-[0_0_8px_#4edea3]"></span>
+                      Open
+                    </span>
+</td>
+<td class="py-3.5 px-space-md text-right whitespace-nowrap">
+<div class="inline-flex items-center gap-1.5">
+<button class="px-2.5 py-1 rounded bg-primary-container text-on-primary font-code-sm text-code-sm font-semibold hover:brightness-110 shadow-sm" type="button">
+                        Apply
+                      </button>
+<button class="p-1 rounded bg-surface-container-high hover:bg-surface-variant text-on-surface-variant hover:text-secondary" title="View Standout Projects" type="button">
+<span class="material-symbols-outlined text-base">code</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 2: META (Closing Soon) -->
+<tr class="bg-surface-container-low/60 hover:bg-surface-container transition-colors group cursor-pointer">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center flex-shrink-0 shadow-sm text-secondary font-headline-sm font-bold">
+                        M
+                      </div>
+<div class="min-w-0">
+<div class="font-headline-sm text-body-md font-semibold text-on-surface group-hover:text-secondary transition-colors flex items-center gap-1.5">
+                          Meta
+                          <span class="px-1.5 py-0.2 rounded bg-surface-container-high text-tertiary font-code-sm text-[10px]">FAANG</span>
+</div>
+<div class="text-on-surface-variant text-body-sm truncate">Software Engineer Intern • AI Infra &amp; PyTorch Runtime</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="text-on-surface">Menlo Park, CA / Remote</div>
+<div class="font-code-sm text-code-sm text-tertiary">Remote Option (US)</div>
+</td>
+<td class="py-3.5 px-space-md text-right font-code-sm text-code-sm text-on-surface-variant whitespace-nowrap">
+                    June 28
+                  </td>
+<td class="py-3.5 px-space-md text-right whitespace-nowrap">
+<div class="font-code-md text-code-md text-error font-semibold">Aug 18, 2024</div>
+<div class="font-code-sm text-code-sm text-error font-medium flex items-center justify-end gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-ping"></span>
+                      5 days left
+                    </div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-wrap gap-1 max-w-[220px]">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-secondary font-code-sm text-code-sm">PyTorch</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface font-code-sm text-code-sm">C++</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface font-code-sm text-code-sm">CUDA</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-error-container/40 text-error font-code-sm text-code-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-error shadow-[0_0_6px_#ffb4ab]"></span>
+                      Closing Soon
+                    </span>
+</td>
+<td class="py-3.5 px-space-md text-right whitespace-nowrap">
+<div class="inline-flex items-center gap-1.5">
+<button class="px-2.5 py-1 rounded bg-error text-on-error font-code-sm text-code-sm font-semibold hover:brightness-110 shadow-sm" type="button">
+                        Fast Track
+                      </button>
+<button class="p-1 rounded bg-surface-container-high hover:bg-surface-variant text-on-surface-variant hover:text-secondary" title="View Standout Projects" type="button">
+<span class="material-symbols-outlined text-base">code</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 3: APPLE -->
+<tr class="hover:bg-surface-container transition-colors group cursor-pointer">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center flex-shrink-0 shadow-sm text-on-surface font-headline-sm font-bold">
+                        
+                      </div>
+<div class="min-w-0">
+<div class="font-headline-sm text-body-md font-semibold text-on-surface group-hover:text-primary transition-colors flex items-center gap-1.5">
+                          Apple
+                          <span class="px-1.5 py-0.2 rounded bg-surface-container-high text-tertiary font-code-sm text-[10px]">FAANG</span>
+</div>
+<div class="text-on-surface-variant text-body-sm truncate">Systems Software Engineering Intern • CoreOS / Kernel</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="text-on-surface">Cupertino, CA</div>
+<div class="font-code-sm text-code-sm text-on-surface-variant">On-Site (Hardware lab)</div>
+</td>
+<td class="py-3.5 px-space-md text-right font-code-sm text-code-sm text-on-surface-variant whitespace-nowrap">
+                    July 20
+                  </td>
+<td class="py-3.5 px-space-md text-right whitespace-nowrap">
+<div class="font-code-md text-code-md text-on-surface font-semibold">Sept 15, 2024</div>
+<div class="font-code-sm text-code-sm text-tertiary">33 days remaining</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-wrap gap-1 max-w-[220px]">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface font-code-sm text-code-sm">C / C++</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface font-code-sm text-code-sm">Swift</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-secondary font-code-sm text-code-sm">OS Internals</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-tertiary-container/30 text-tertiary font-code-sm text-code-sm font-medium">
+<span class="w-2 h-2 rounded-full bg-tertiary shadow-[0_0_8px_#4edea3]"></span>
+                      Open
+                    </span>
+</td>
+<td class="py-3.5 px-space-md text-right whitespace-nowrap">
+<div class="inline-flex items-center gap-1.5">
+<button class="px-2.5 py-1 rounded bg-primary-container text-on-primary font-code-sm text-code-sm font-semibold hover:brightness-110 shadow-sm" type="button">
+                        Apply
+                      </button>
+<button class="p-1 rounded bg-surface-container-high hover:bg-surface-variant text-on-surface-variant hover:text-secondary" title="View Standout Projects" type="button">
+<span class="material-symbols-outlined text-base">code</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 4: AMAZON (Rolling Wave) -->
+<tr class="hover:bg-surface-container transition-colors group cursor-pointer">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center flex-shrink-0 shadow-sm text-primary font-headline-sm font-bold">
+                        A
+                      </div>
+<div class="min-w-0">
+<div class="font-headline-sm text-body-md font-semibold text-on-surface group-hover:text-primary transition-colors flex items-center gap-1.5">
+                          Amazon
+                          <span class="px-1.5 py-0.2 rounded bg-surface-container-high text-tertiary font-code-sm text-[10px]">FAANG</span>
+</div>
+<div class="text-on-surface-variant text-body-sm truncate">Software Development Engineer (SDE) Intern • AWS Lambda</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="text-on-surface">Seattle, WA / Multiple</div>
+<div class="font-code-sm text-code-sm text-secondary">Hybrid (3d/wk)</div>
+</td>
+<td class="py-3.5 px-space-md text-right font-code-sm text-code-sm text-on-surface-variant whitespace-nowrap">
+                    July 05
+                  </td>
+<td class="py-3.5 px-space-md text-right whitespace-nowrap">
+<div class="font-code-md text-code-md text-secondary font-semibold">Rolling Quota</div>
+<div class="font-code-sm text-code-sm text-on-surface-variant">Capacity: 62% filled</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-wrap gap-1 max-w-[220px]">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface font-code-sm text-code-sm">Java</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-secondary font-code-sm text-code-sm">AWS</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface font-code-sm text-code-sm">Microservices</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-highest text-secondary font-code-sm text-code-sm font-medium">
+<span class="w-2 h-2 rounded-full bg-secondary shadow-[0_0_8px_#4cd7f6]"></span>
+                      Rolling Wave
+                    </span>
+</td>
+<td class="py-3.5 px-space-md text-right whitespace-nowrap">
+<div class="inline-flex items-center gap-1.5">
+<button class="px-2.5 py-1 rounded bg-primary-container text-on-primary font-code-sm text-code-sm font-semibold hover:brightness-110 shadow-sm" type="button">
+                        Apply
+                      </button>
+<button class="p-1 rounded bg-surface-container-high hover:bg-surface-variant text-on-surface-variant hover:text-secondary" title="View Standout Projects" type="button">
+<span class="material-symbols-outlined text-base">code</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 5: NETFLIX (Urgent) -->
+<tr class="bg-error-container/10 hover:bg-surface-container transition-colors group cursor-pointer">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center flex-shrink-0 shadow-sm text-error font-headline-sm font-bold">
+                        N
+                      </div>
+<div class="min-w-0">
+<div class="font-headline-sm text-body-md font-semibold text-on-surface group-hover:text-error transition-colors flex items-center gap-1.5">
+                          Netflix
+                          <span class="px-1.5 py-0.2 rounded bg-surface-container-high text-tertiary font-code-sm text-[10px]">FAANG</span>
+</div>
+<div class="text-on-surface-variant text-body-sm truncate">Core Systems &amp; Streaming Infra Intern • Media Pipelines</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="text-on-surface">Los Gatos, CA</div>
+<div class="font-code-sm text-code-sm text-on-surface-variant">Flexible Hybrid</div>
+</td>
+<td class="py-3.5 px-space-md text-right font-code-sm text-code-sm text-on-surface-variant whitespace-nowrap">
+                    July 01
+                  </td>
+<td class="py-3.5 px-space-md text-right whitespace-nowrap">
+<div class="font-code-md text-code-md text-error font-bold">July 28, 2024</div>
+<div class="font-code-sm text-code-sm text-error font-semibold flex items-center justify-end gap-1">
+<span class="w-2 h-2 rounded-full bg-error animate-ping"></span>
+                      Closes in 48h!
+                    </div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-wrap gap-1 max-w-[220px]">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface font-code-sm text-code-sm">Java</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-secondary font-code-sm text-code-sm">Go</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface font-code-sm text-code-sm">Kafka</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-error text-on-error font-code-sm text-code-sm font-bold shadow-[0_0_8px_rgba(255,180,171,0.5)]">
+                      Urgent
+                    </span>
+</td>
+<td class="py-3.5 px-space-md text-right whitespace-nowrap">
+<div class="inline-flex items-center gap-1.5">
+<button class="px-2.5 py-1 rounded bg-error text-on-error font-code-sm text-code-sm font-bold hover:brightness-110 shadow-md" type="button">
+                        Apply Now
+                      </button>
+<button class="p-1 rounded bg-surface-container-high hover:bg-surface-variant text-on-surface-variant hover:text-secondary" title="View Standout Projects" type="button">
+<span class="material-symbols-outlined text-base">code</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 6: MICROSOFT -->
+<tr class="hover:bg-surface-container transition-colors group cursor-pointer">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center flex-shrink-0 shadow-sm text-secondary font-headline-sm font-bold">
+                        MS
+                      </div>
+<div class="min-w-0">
+<div class="font-headline-sm text-body-md font-semibold text-on-surface group-hover:text-secondary transition-colors flex items-center gap-1.5">
+                          Microsoft
+                          <span class="px-1.5 py-0.2 rounded bg-surface-container-high text-tertiary font-code-sm text-[10px]">FAANG+</span>
+</div>
+<div class="text-on-surface-variant text-body-sm truncate">Software Engineer Intern • Azure Developer Division</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="text-on-surface">Redmond, WA</div>
+<div class="font-code-sm text-code-sm text-secondary">Hybrid Eligible</div>
+</td>
+<td class="py-3.5 px-space-md text-right font-code-sm text-code-sm text-on-surface-variant whitespace-nowrap">
+                    July 22
+                  </td>
+<td class="py-3.5 px-space-md text-right whitespace-nowrap">
+<div class="font-code-md text-code-md text-on-surface font-semibold">Oct 01, 2024</div>
+<div class="font-code-sm text-code-sm text-tertiary">49 days remaining</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-wrap gap-1 max-w-[220px]">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface font-code-sm text-code-sm">C#</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface font-code-sm text-code-sm">TypeScript</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-secondary font-code-sm text-code-sm">Azure SDK</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-center whitespace-nowrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-tertiary-container/30 text-tertiary font-code-sm text-code-sm font-medium">
+<span class="w-2 h-2 rounded-full bg-tertiary shadow-[0_0_8px_#4edea3]"></span>
+                      Open
+                    </span>
+</td>
+<td class="py-3.5 px-space-md text-right whitespace-nowrap">
+<div class="inline-flex items-center gap-1.5">
+<button class="px-2.5 py-1 rounded bg-primary-container text-on-primary font-code-sm text-code-sm font-semibold hover:brightness-110 shadow-sm" type="button">
+                        Apply
+                      </button>
+<button class="p-1 rounded bg-surface-container-high hover:bg-surface-variant text-on-surface-variant hover:text-secondary" title="View Standout Projects" type="button">
+<span class="material-symbols-outlined text-base">code</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Bottom Pagination / Status Telemetry -->
+<div class="px-space-md py-3 bg-surface-container flex flex-col sm:flex-row items-center justify-between gap-space-sm text-on-surface-variant font-code-sm text-code-sm">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span>Telemetry synchronized with GitHub Summer-2025 repo feeds</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface hover:bg-surface-variant disabled:opacity-40" disabled="">Previous</button>
+<button class="px-2.5 py-1 rounded bg-primary-container text-on-primary font-bold">1</button>
+<button class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface hover:bg-surface-variant">2</button>
+<button class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface hover:bg-surface-variant">3</button>
+<span class="px-1 text-outline">...</span>
+<button class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface hover:bg-surface-variant">14</button>
+<button class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface hover:bg-surface-variant">Next</button>
+</div>
+</div>
+</div>
+<!-- RIGHT: FORECAST, TIMELINE & RECOMMENDATIONS (Spans 4 columns) -->
+<div class="xl:col-span-4 flex flex-col gap-space-md">
+<!-- PANEL 1: RECOMMENDED NEXT MOVE (High-Impact Hero Callout) -->
+<div class="bg-surface-container-low p-space-md rounded-xl shadow-xl relative overflow-hidden flex flex-col gap-space-sm">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary-container/20 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-wider font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm">bolt</span>
+                Tactical Recommendation
+              </span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Impact Score: 94/100</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">
+              Finalize Distributed Storage Project
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Google and Amazon will hit <span class="text-tertiary font-medium">peak OA review capacity</span> by August 25. Having your <span class="text-on-surface font-semibold">Raft Consensus Key-Value Store</span> project visible in repo commits will elevate your resume score past screening filters.
+            </p>
+<!-- Mini Checklist -->
+<div class="bg-surface-container p-space-sm rounded-lg flex flex-col gap-1.5 font-code-sm text-code-sm">
+<div class="flex items-center gap-2 text-tertiary">
+<span class="material-symbols-outlined text-base">check_circle</span>
+<span>Resume parsed &amp; keywords validated</span>
+</div>
+<div class="flex items-center gap-2 text-secondary">
+<span class="material-symbols-outlined text-base">radio_button_unchecked</span>
+<span>Tag GitHub repo with `distributed-systems` &amp; `raft`</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-base">radio_button_unchecked</span>
+<span>Submit Google SWE application before Aug 20</span>
+</div>
+</div>
+<div class="pt-2 flex items-center gap-space-sm">
+<a class="flex-1 py-2 rounded bg-primary-container hover:brightness-110 text-on-primary font-code-sm text-code-sm font-semibold text-center shadow-md transition-all" data-path="standout-projects" href="#">
+                Browse Standout Projects →
+              </a>
+<button class="p-2 rounded bg-surface-container-high hover:bg-surface-variant text-on-surface-variant" type="button">
+<span class="material-symbols-outlined text-base">bookmark_add</span>
+</button>
+</div>
+</div>
+<!-- PANEL 2: FAANG HISTORICAL APPLICATION WAVES (Gantt-Style Timeline) -->
+<div class="bg-surface-container-low p-space-md rounded-xl shadow-xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold block">Application Waves Forecast</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Cycle capacity modeling (2022 - 2025 data)</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant">timeline</span>
+</div>
+<!-- Gantt Visualization -->
+<div class="flex flex-col gap-3 font-code-sm text-code-sm">
+<!-- Timeline Axis Header -->
+<div class="grid grid-cols-4 text-center font-label-caps text-label-caps text-outline uppercase pb-1">
+<span>JUL</span>
+<span class="text-secondary font-bold">AUG (NOW)</span>
+<span>SEP</span>
+<span>OCT</span>
+</div>
+<!-- Bar 1: Wave 1 Early Big Tech -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between text-body-sm text-on-surface">
+<span class="font-medium flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+                    Wave 1: Quant &amp; Big Tech
+                  </span>
+<span class="text-tertiary font-code-sm text-[11px]">82% Quota Filled</span>
+</div>
+<div class="h-4 bg-surface-container-lowest rounded-full overflow-hidden flex relative">
+<!-- Progress Bar with subtle striping -->
+<div class="h-full bg-gradient-to-r from-tertiary to-secondary rounded-full w-[82%] shadow-[0_0_8px_rgba(78,222,163,0.4)]"></div>
+<!-- Marker -->
+<div class="absolute left-[50%] top-0 bottom-0 w-0.5 bg-on-surface"></div>
+</div>
+<div class="flex justify-between text-[10px] text-outline">
+<span>Google, Citadel, Meta</span>
+<span>Cap: Late August</span>
+</div>
+</div>
+<!-- Bar 2: Wave 2 Growth Unicorns & Mid-Tier -->
+<div class="flex flex-col gap-1 mt-1">
+<div class="flex items-center justify-between text-body-sm text-on-surface">
+<span class="font-medium flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                    Wave 2: Enterprise &amp; AI Startups
+                  </span>
+<span class="text-secondary font-code-sm text-[11px]">34% Quota Filled</span>
+</div>
+<div class="h-4 bg-surface-container-lowest rounded-full overflow-hidden flex relative">
+<div class="h-full bg-secondary rounded-full w-[34%]"></div>
+<div class="absolute left-[50%] top-0 bottom-0 w-0.5 bg-on-surface"></div>
+</div>
+<div class="flex justify-between text-[10px] text-outline">
+<span>Databricks, OpenAI, Stripe</span>
+<span>Cap: Mid-October</span>
+</div>
+</div>
+<!-- Bar 3: Wave 3 Winter / Off-Cycle -->
+<div class="flex flex-col gap-1 mt-1">
+<div class="flex items-center justify-between text-body-sm text-on-surface">
+<span class="font-medium flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+                    Wave 3: Late Fall Backfills
+                  </span>
+<span class="text-outline font-code-sm text-[11px]">Upcoming (Oct)</span>
+</div>
+<div class="h-4 bg-surface-container-lowest rounded-full overflow-hidden flex relative">
+<div class="h-full bg-outline-variant/30 rounded-full w-[8%]"></div>
+<div class="absolute left-[50%] top-0 bottom-0 w-0.5 bg-on-surface"></div>
+</div>
+<div class="flex justify-between text-[10px] text-outline">
+<span>Apple secondary, Startups</span>
+<span>Cap: December</span>
+</div>
+</div>
+</div>
+<!-- In-Depth Historical Takeaway Tip -->
+<div class="bg-surface-container p-space-sm rounded-lg flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-lg flex-shrink-0 mt-0.5">info</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+<span class="text-on-surface font-semibold">Pro-tip for 2025:</span> 84% of candidates receiving Google/Amazon offers applied within <span class="text-secondary font-medium">14 days</span> of the posting date before automated resume filters tighten.
+              </p>
+</div>
+</div>
+<!-- PANEL 3: CURATED ARCHITECTURE SPOTLIGHT (Visual Richness Card) -->
+<div class="bg-surface-container-low p-space-md rounded-xl shadow-xl flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant tracking-wider font-semibold">
+                Architecture Blueprint
+              </span>
+<span class="font-code-sm text-code-sm text-tertiary">rev: raft-v3.2</span>
+</div>
+<div class="relative w-full h-28 rounded-lg bg-surface-container-lowest overflow-hidden flex items-center justify-center p-3">
+<!-- SVG Visual Representation of a Distributed Raft Log Pipeline -->
+<svg class="w-full h-full text-secondary" fill="none" viewbox="0 0 320 80" xmlns="http://www.w3.org/2000/svg">
+<!-- Node 1: Leader -->
+<rect class="fill-surface-container stroke-primary-container" height="40" rx="4" stroke-width="1.5" width="70" x="10" y="20"></rect>
+<text fill="#dae2fd" font-family="JetBrains Mono" font-size="10" font-weight="600" text-anchor="middle" x="45" y="44">Leader (S1)</text>
+<!-- Arrow 1 -->
+<path d="M80 40 L120 40" stroke="#4cd7f6" stroke-dasharray="3 3" stroke-width="2"></path>
+<polygon fill="#4cd7f6" points="120,40 114,36 114,44"></polygon>
+<!-- Node 2: Raft Consensus Engine -->
+<rect class="fill-surface-container-high stroke-secondary" height="56" rx="4" stroke-width="1.5" width="85" x="125" y="12"></rect>
+<text fill="#4cd7f6" font-family="JetBrains Mono" font-size="10" font-weight="700" text-anchor="middle" x="167" y="36">Consensus</text>
+<text fill="#c7c4d7" font-family="JetBrains Mono" font-size="8" text-anchor="middle" x="167" y="52">gRPC • RPC Log</text>
+<!-- Arrow 2 -->
+<path d="M210 40 L245 40" stroke="#4edea3" stroke-width="2"></path>
+<polygon fill="#4edea3" points="245,40 239,36 239,44"></polygon>
+<!-- Node 3: Storage Engine -->
+<rect class="fill-surface-container stroke-tertiary" height="40" rx="4" stroke-width="1.5" width="60" x="250" y="20"></rect>
+<text fill="#4edea3" font-family="JetBrains Mono" font-size="10" font-weight="600" text-anchor="middle" x="280" y="44">RocksDB</text>
+</svg>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<span class="font-headline-sm text-body-md font-semibold text-on-surface">Distributed Consensus Engine</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-tertiary font-code-sm text-code-sm font-semibold">Tier 1 Match</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Targeted for Meta Infra, Netflix Streaming, &amp; Apple CoreOS applicants.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Lightweight client-side search simulation for dynamic interactivity
+  document.addEventListener('DOMContentLoaded', () => {
+    const searchInput = document.getElementById('role-search');
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        const query = e.target.value.toLowerCase();
+        const rows = document.querySelectorAll('tbody tr');
+        rows.forEach(row => {
+          const text = row.innerText.toLowerCase();
+          if (text.includes(query)) {
+            row.style.display = '';
+          } else {
+            row.style.display = 'none';
+          }
+        });
+      });
+    }
+  });
+</script></main><footer class="w-full bg-surface-container-lowest border-t border-outline-variant/20 py-space-lg mt-auto"><div class="w-full px-gutter flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><span class="font-code-sm text-code-sm text-on-surface-variant">© 2025 InternTrack Telemetry Engine</span><span class="text-outline-variant">•</span><span class="font-code-sm text-code-sm text-tertiary">v2.8.4-prod</span></div><div class="flex items-center gap-space-md font-code-sm text-code-sm text-on-surface-variant"><span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-tertiary"></span>Pipeline Latency: 14ms</span><span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-secondary"></span>FAANG Scraping: Online</span></div></div></footer></body></html>

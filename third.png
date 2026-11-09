@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {"on-tertiary-container": "#000703", "surface-container": "#171f33", "inverse-surface": "#dae2fd", "tertiary-fixed": "#6ffbbe", secondary: "#4cd7f6", "on-surface-variant": "#c7c4d7", "secondary-fixed-dim": "#4cd7f6", "on-tertiary": "#003824", "surface-container-low": "#131b2e", "tertiary-fixed-dim": "#4edea3", "surface-tint": "#c0c1ff", "error-container": "#93000a", error: "#ffb4ab", "surface-variant": "#2d3449", "on-secondary-fixed-variant": "#004e5c", "surface-container-highest": "#2d3449", "on-tertiary-fixed-variant": "#005236", "on-secondary-fixed": "#001f26", "on-background": "#dae2fd", "surface-dim": "#0b1326", "outline-variant": "#464554", "on-primary-container": "#0d0096", primary: "#c0c1ff", background: "#0b1326", "tertiary-container": "#00885d", surface: "#0b1326", "primary-fixed": "#e1e0ff", "inverse-on-surface": "#283044", "on-secondary-container": "#00424e", "on-surface": "#dae2fd", "secondary-fixed": "#acedff", "on-tertiary-fixed": "#002113", "primary-fixed-dim": "#c0c1ff", "on-error": "#690005", "on-primary-fixed": "#07006c", "surface-container-high": "#222a3d", "surface-container-lowest": "#060e20", "on-error-container": "#ffdad6", "on-secondary": "#003640", "primary-container": "#8083ff", "inverse-primary": "#494bd6", tertiary: "#4edea3", "on-primary": "#1000a9", "surface-bright": "#31394d", outline: "#908fa0", "on-primary-fixed-variant": "#2f2ebe", "secondary-container": "#03b5d3"}, borderRadius: {DEFAULT: "0.125rem", lg: "0.25rem", xl: "0.5rem", full: "0.75rem"}, spacing: {gutter: "1rem", "space-xs": "0.25rem", "space-xl": "2rem", "space-sm": "0.5rem", margin: "1.5rem", "space-lg": "1.25rem", "space-md": "0.75rem"}, fontFamily: {"headline-sm": ["Plus Jakarta Sans"], "label-caps": ["JetBrains Mono"], "body-md": ["Inter"], "body-lg": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "code-lg": ["JetBrains Mono"], "code-sm": ["JetBrains Mono"], "code-md": ["JetBrains Mono"], "body-sm": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], headline: ["Plus Jakarta Sans"], display: ["Plus Jakarta Sans"], body: ["Inter"], label: ["JetBrains Mono"]}, fontSize: {"headline-sm": ["18px", {lineHeight: "26px", letterSpacing: "-0.01em", fontWeight: "600"}], "label-caps": ["10px", {lineHeight: "12px", letterSpacing: "0.08em", fontWeight: "600"}], "body-md": ["14px", {lineHeight: "20px", letterSpacing: "0em", fontWeight: "400"}], "body-lg": ["16px", {lineHeight: "24px", letterSpacing: "-0.01em", fontWeight: "400"}], "headline-md": ["22px", {lineHeight: "30px", letterSpacing: "-0.015em", fontWeight: "600"}], "code-lg": ["14px", {lineHeight: "20px", letterSpacing: "-0.01em", fontWeight: "500"}], "code-sm": ["11px", {lineHeight: "14px", letterSpacing: "0.02em", fontWeight: "400"}], "code-md": ["12px", {lineHeight: "16px", letterSpacing: "0em", fontWeight: "500"}], "body-sm": ["12px", {lineHeight: "18px", letterSpacing: "0.01em", fontWeight: "400"}], "headline-lg": ["30px", {lineHeight: "38px", letterSpacing: "-0.02em", fontWeight: "700"}], "display-lg": ["40px", {lineHeight: "48px", letterSpacing: "-0.03em", fontWeight: "700"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.35)]"><div class="h-16 w-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md flex-shrink-0"><div class="flex items-center gap-space-sm"><img alt="InternTrack Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UgqWSBiplGO6KWzuopYcvUkLLJrQ3v5_-BpB_Nr3Pvq4V3bw8vbavoXTw6jRp_dOPnJxIMTZM8jBmzeFP5VfJJNNtVC1bD972I83CVpYKuvhq0EtGhHoxvIPufNv3AUf_yaBidEQNjh8TMIE5VCG-Mhuw5_LeiU5P9rM9hITjeToxXl4hIzZCG61Va1EOmsB4pD4utqmfQfDR11WU6LQq6tf8C8njjWBSF2TU-w9eOej7hk9L-lW2abYLp"/><span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">InternTrack</span></div><div class="hidden sm:inline-flex items-center px-space-sm py-space-xs rounded-full bg-surface-container-high border border-outline-variant/40"><span class="font-code-sm text-code-sm text-tertiary font-medium">FAANG 2025</span></div></div><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-semibold rounded-lg shadow-[0_0_12px_rgba(128,131,255,0.3)]"><a class="px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="deadlines-hub" href="#">Deadlines Hub</a><a class="px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="company-guides" href="#">Company Guides</a><a aria-current="page" class="px-space-md py-space-sm transition-colors bg-primary-container text-on-primary font-semibold rounded-lg shadow-[0_0_12px_rgba(128,131,255,0.3)]" data-path="standout-projects" href="#">Standout Projects</a><a class="px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="my-applications" href="#">My Applications</a></nav><div class="flex items-center gap-space-sm flex-1 max-w-xl justify-end"><div class="relative w-full max-w-xs hidden md:block"><span class="material-symbols-outlined absolute left-2.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-base select-none pointer-events-none">search</span><input class="w-full pl-8 pr-space-sm py-1.5 bg-surface-container-lowest text-on-surface placeholder:text-outline border border-outline-variant/50 rounded-lg font-code-sm text-code-sm focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-all" placeholder="Search companies, roles (e.g. Google SWE, Kafka)..." type="text"/></div><div class="hidden lg:flex items-center gap-1.5 px-space-sm py-1.5 bg-surface-container-low border border-outline-variant/40 rounded-lg"><span class="w-2 h-2 rounded-full bg-tertiary shadow-[0_0_6px_#4edea3]"></span><span class="font-code-sm text-code-sm text-on-surface">Summer 2025</span><span class="font-label-caps text-label-caps uppercase text-tertiary bg-surface-container px-1 py-0.5 rounded">Active</span><span class="material-symbols-outlined text-on-surface-variant text-sm cursor-pointer">arrow_drop_down</span></div><div class="flex items-center gap-1"><button class="p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg transition-colors flex items-center justify-center" title="Starred Bookmarks" type="button"><span class="material-symbols-outlined text-lg">star</span></button><button class="p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg transition-colors relative flex items-center justify-center" title="Notifications" type="button"><span class="material-symbols-outlined text-lg">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 bg-secondary rounded-full shadow-[0_0_6px_#4cd7f6]"></span></button></div><div class="flex items-center gap-space-sm pl-space-xs border-l border-outline-variant/40"><div class="flex flex-col text-right hidden 2xl:flex"><span class="font-body-sm text-body-sm text-on-surface font-medium leading-none">Alex Chen</span><span class="font-code-sm text-code-sm text-on-surface-variant leading-none mt-1">CS @ Berkeley</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-primary-container/40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3xcZQ_oh54vYggICgfPWIF5X_k7rWXJUIeqolj-Ingd20UgjXTOLoDmGKT0OlTRZuBaS_8beMVJUcJ4ya8XulzsH_5e-kAcpSpkSjSAvKIyt7njxLj2s1HJlcq9OXsOrtGNj7v_XyHYWol_7HjPEeGlcAcQpcBA-DCKqbGy8iM__l-yxZ7cviPZ66LwTrJF4IR3vrQYgNnr5vvu23F6xsPpl3-s_qoN6xxPzmMBHk4tsUcyCkPTgaiw"/></div></div></div></header><main class="w-full pt-16 bg-surface flex-1"><div class="flex flex-col w-full">
+<!-- Top Command Ribbon / Breadcrumb Telemetry -->
+<div class="w-full bg-surface-container-lowest px-gutter py-space-sm flex flex-wrap items-center justify-between gap-space-sm shadow-sm">
+<div class="flex items-center gap-space-sm">
+<a class="font-code-sm text-code-sm text-on-surface-variant hover:text-on-surface flex items-center gap-1 transition-colors" href="#">
+<span class="material-symbols-outlined text-base">arrow_back</span>
+<span>Projects Hub</span>
+</a>
+<span class="text-outline-variant text-xs">/</span>
+<span class="font-code-sm text-code-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">hub</span>
+<span>ARCH-RAFT-09</span>
+</span>
+<span class="font-label-caps text-label-caps uppercase bg-primary-container/20 text-primary px-2 py-0.5 rounded-full">
+        Production Tested
+      </span>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-1 font-code-sm text-code-sm text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+<span>Recruiter Impact Metric:</span>
+<span class="text-tertiary font-bold">98/100 (FAANG S-Tier)</span>
+</div>
+<div class="h-4 w-[1px] bg-outline-variant/30 hidden sm:block"></div>
+<span class="font-code-sm text-code-sm text-on-surface-variant hidden sm:inline">rev: v3.4.1-dist</span>
+</div>
+</div>
+<div class="w-full px-gutter py-space-xl flex flex-col gap-space-xl">
+<!-- Section 1: Blueprint Header & Action Command Center -->
+<div class="relative w-full rounded-xl bg-surface-container-low p-space-lg sm:p-space-xl shadow-xl overflow-hidden">
+<!-- Ambient Blueprint Wireframe Pattern Overlay -->
+<div class="absolute inset-0 opacity-[0.03] pointer-events-none bg-[radial-gradient(#c0c1ff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+<div class="absolute -top-24 -right-24 w-96 h-96 bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative flex flex-col lg:flex-row lg:items-start justify-between gap-space-lg">
+<div class="flex-1 max-w-4xl space-y-space-md">
+<div class="flex flex-wrap items-center gap-space-sm">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-error-container/40 text-error font-code-sm text-code-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-error shadow-[0_0_8px_#ffb4ab]"></span>
+              Difficulty: Advanced Systems
+            </span>
+<span class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-surface-container-high text-secondary font-code-sm text-code-sm">
+<span class="material-symbols-outlined text-sm">timer</span>
+              Est. Build Time: 3–4 Weeks
+            </span>
+<span class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-tertiary-container/30 text-tertiary font-code-sm text-code-sm">
+<span class="material-symbols-outlined text-sm">verified</span>
+              ATS Optimized: v2025 Standard
+            </span>
+</div>
+<div>
+<h1 class="font-display-lg text-display-lg text-on-surface tracking-tight">
+              Distributed In-Memory Raft Key-Value Store
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-space-xs leading-relaxed">
+              A high-throughput, fault-tolerant replicated datastore implementing the Raft consensus algorithm with state machine replication, snapshot compaction, and atomic linearizable execution.
+            </p>
+</div>
+<!-- Target Companies Pipeline Matrix -->
+<div class="pt-space-xs flex flex-wrap items-center gap-x-space-md gap-y-space-xs">
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">Prime Target Teams:</span>
+<div class="flex flex-wrap items-center gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-code-sm text-code-sm">Google Spanner / Storage</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-code-sm text-code-sm">Amazon DynamoDB Core</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-code-sm text-code-sm">Netflix Cloud Cache Engine</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-code-sm text-code-sm">Databricks Distributed Log</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-code-sm text-code-sm">Cockroach Labs</span>
+</div>
+</div>
+</div>
+<!-- Call to Actions -->
+<div class="flex flex-col sm:flex-row lg:flex-col gap-space-sm w-full lg:w-72 flex-shrink-0">
+<button class="w-full py-2.5 px-space-md rounded-lg bg-primary-container text-on-primary font-headline-sm text-headline-sm font-semibold flex items-center justify-center gap-space-sm shadow-[0_0_20px_rgba(128,131,255,0.35)] hover:bg-primary-container/90 transition-all active:scale-[0.98]" type="button">
+<span class="material-symbols-outlined text-xl">fork_right</span>
+<span>Fork Starter Repo</span>
+</button>
+<button class="w-full py-2 px-space-md rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-variant font-body-md text-body-md font-medium flex items-center justify-center gap-space-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-lg text-secondary">add_task</span>
+<span>Export to Personal Tracker</span>
+</button>
+<button class="w-full py-2 px-space-md rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-code-sm text-code-sm flex items-center justify-center gap-space-sm transition-colors" onclick="document.getElementById('resume-goldmine').scrollIntoView({behavior: 'smooth'})" type="button">
+<span class="material-symbols-outlined text-lg text-tertiary">content_copy</span>
+<span>Jump to Resume Bullets</span>
+</button>
+</div>
+</div>
+<!-- Quick Metrics Strip -->
+<div class="mt-space-lg pt-space-md grid grid-cols-2 md:grid-cols-4 gap-space-md bg-surface-container-lowest/80 p-space-md rounded-lg">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps uppercase text-outline">Primary Runtime</span>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-0.5 flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>Go 1.23 / gRPC
+          </span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps uppercase text-outline">Target P99 Latency</span>
+<span class="font-headline-sm text-headline-sm text-tertiary mt-0.5">&lt; 4.8ms @ 25k ops</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps uppercase text-outline">Consensus Invariant</span>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-0.5">Strict Linearizability</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps uppercase text-outline">Fault Model</span>
+<span class="font-headline-sm text-headline-sm text-secondary mt-0.5">Fail-Stop (N/2 - 1)</span>
+</div>
+</div>
+</div>
+<!-- Section 2: Visual High-Tech Architecture Diagram -->
+<div class="flex flex-col gap-space-md">
+<div class="flex flex-wrap items-end justify-between gap-space-sm">
+<div>
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> System Topology &amp; RPC Pipeline
+          </span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-0.5">Distributed State Machine Topology</h2>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-lowest px-2 py-1 rounded-lg">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Live Topology: Quorum Active (3/3 Nodes)</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-low rounded-xl p-space-md sm:p-space-lg shadow-xl relative overflow-hidden">
+<!-- SVG Architecture Diagram Render -->
+<div class="w-full overflow-x-auto pb-space-sm">
+<div class="min-w-[860px] flex flex-col gap-space-md">
+<!-- Tier 1: Clients & Gateway -->
+<div class="grid grid-cols-12 gap-space-md items-center">
+<div class="col-span-3 bg-surface-container p-space-md rounded-lg flex flex-col items-center justify-center text-center shadow-md">
+<span class="material-symbols-outlined text-2xl text-secondary">terminal</span>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-1">Client SDK / App</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant mt-0.5">Set(K, V) / Get(K)</span>
+</div>
+<div class="col-span-1 flex items-center justify-center">
+<div class="flex flex-col items-center w-full">
+<span class="font-code-sm text-code-sm text-secondary">gRPC</span>
+<div class="w-full h-0.5 bg-gradient-to-r from-secondary to-primary-container"></div>
+<span class="material-symbols-outlined text-xs text-primary-container -mt-1.5">arrow_forward</span>
+</div>
+</div>
+<div class="col-span-8 bg-surface-container-high p-space-md rounded-lg flex items-center justify-between shadow-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-primary-container/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-lg">alt_route</span>
+</div>
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface">Consistent Hash Ring / gRPC Gateway</span>
+<p class="font-code-sm text-code-sm text-on-surface-variant">Automated Leader Redirection (HTTP 307 / gRPC Metadata Forwarding)</p>
+</div>
+</div>
+<div class="hidden sm:flex items-center gap-1 px-space-sm py-1 rounded bg-surface-container text-tertiary font-code-sm text-code-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> Term: 4 (Stable)
+                </div>
+</div>
+</div>
+<!-- Flow Connector -->
+<div class="flex justify-center -my-2">
+<div class="h-6 w-0.5 bg-primary-container/60"></div>
+</div>
+<!-- Tier 2: The Consensus Cluster (Leader & Replicas) -->
+<div class="grid grid-cols-12 gap-space-md">
+<!-- LEADER NODE (Expanded Details) -->
+<div class="col-span-12 lg:col-span-6 bg-surface-container-high rounded-xl p-space-lg shadow-xl relative">
+<div class="absolute top-space-md right-space-md flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-tertiary-container text-on-tertiary font-code-sm text-code-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-tertiary shadow-[0_0_6px_#4edea3]"></span>
+                  ACTIVE LEADER (Node 01)
+                </div>
+<div class="flex items-center gap-space-sm mb-space-md">
+<span class="material-symbols-outlined text-2xl text-tertiary">star</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Node 01 [Consensus Controller]</h3>
+<span class="font-code-sm text-code-sm text-outline">ListenAddr: :9091 | Lease Valid</span>
+</div>
+</div>
+<!-- Internal Sub-Modules -->
+<div class="grid grid-cols-3 gap-space-sm">
+<div class="bg-surface-container-lowest p-space-sm rounded-lg flex flex-col justify-between">
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase">Core</span>
+<p class="font-code-sm text-code-sm text-on-surface font-semibold mt-1">Raft Consensus</p>
+</div>
+<ul class="text-[10px] font-code-sm text-on-surface-variant space-y-1 mt-2">
+<li>• Election Timers</li>
+<li>• MatchIndex[]</li>
+<li>• NextIndex[]</li>
+</ul>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg flex flex-col justify-between">
+<div>
+<span class="font-label-caps text-label-caps text-primary uppercase">Storage</span>
+<p class="font-code-sm text-code-sm text-on-surface font-semibold mt-1">WAL &amp; AppendLog</p>
+</div>
+<ul class="text-[10px] font-code-sm text-on-surface-variant space-y-1 mt-2">
+<li>• Zero-Alloc Protobuf</li>
+<li>• fsync batching</li>
+<li>• Log Segment files</li>
+</ul>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg flex flex-col justify-between">
+<div>
+<span class="font-label-caps text-label-caps text-tertiary uppercase">State</span>
+<p class="font-code-sm text-code-sm text-on-surface font-semibold mt-1">Key-Value Engine</p>
+</div>
+<ul class="text-[10px] font-code-sm text-on-surface-variant space-y-1 mt-2">
+<li>• Skip-List Storage</li>
+<li>• Fine-grain RWMutex</li>
+<li>• Snapshotting ptr</li>
+</ul>
+</div>
+</div>
+<div class="mt-space-md p-space-sm bg-surface-container-low rounded-lg flex items-center justify-between text-code-sm font-code-sm">
+<span class="text-on-surface-variant">CommitIndex: <span class="text-on-surface font-bold">148,920</span></span>
+<span class="text-on-surface-variant">LastApplied: <span class="text-tertiary font-bold">148,920</span></span>
+<span class="text-on-surface-variant">Log Compaction: <span class="text-secondary">Snap-60k</span></span>
+</div>
+</div>
+<!-- FOLLOWERS (Horizontal Matrix) -->
+<div class="col-span-12 lg:col-span-6 flex flex-col justify-between gap-space-sm">
+<!-- Follower 02 -->
+<div class="bg-surface-container p-space-md rounded-lg flex items-center justify-between shadow-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-xl text-outline">dns</span>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Follower Node 02</span>
+<span class="font-label-caps text-label-caps text-tertiary bg-surface-container-high px-1.5 py-0.2 rounded">In-Sync</span>
+</div>
+<span class="font-code-sm text-code-sm text-outline-variant">Replication Lag: 0.2ms | MatchIndex: 148,920</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-code-sm text-code-sm text-secondary">AppendEntries OK</span>
+<p class="font-label-caps text-label-caps text-outline">Heartbeat: 42ms ago</p>
+</div>
+</div>
+<!-- Follower 03 -->
+<div class="bg-surface-container p-space-md rounded-lg flex items-center justify-between shadow-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-xl text-outline">dns</span>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Follower Node 03</span>
+<span class="font-label-caps text-label-caps text-tertiary bg-surface-container-high px-1.5 py-0.2 rounded">In-Sync</span>
+</div>
+<span class="font-code-sm text-code-sm text-outline-variant">Replication Lag: 0.4ms | MatchIndex: 148,919</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-code-sm text-code-sm text-secondary">AppendEntries OK</span>
+<p class="font-label-caps text-label-caps text-outline">Heartbeat: 38ms ago</p>
+</div>
+</div>
+<!-- Protocol Invariants Legend -->
+<div class="bg-surface-container-lowest p-space-sm rounded-lg grid grid-cols-3 gap-space-xs text-center font-code-sm text-code-sm">
+<div class="p-1">
+<span class="text-secondary block font-bold">RequestVote RPC</span>
+<span class="text-[10px] text-outline">Candidate quorums</span>
+</div>
+<div class="p-1">
+<span class="text-primary block font-bold">AppendEntries RPC</span>
+<span class="text-[10px] text-outline">Log sync &amp; Heartbeat</span>
+</div>
+<div class="p-1">
+<span class="text-tertiary block font-bold">InstallSnapshot</span>
+<span class="text-[10px] text-outline">Fast-catchup streaming</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 3: Phased Implementation Roadmap (Terminal Bento Grid) -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-end justify-between">
+<div>
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Engineering Execution
+          </span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-0.5">Phased Implementation Roadmap</h2>
+</div>
+<span class="font-code-sm text-code-sm text-outline hidden md:block">Total Expected Effort: ~65 Engineering Hours</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
+<!-- Phase 1 -->
+<div class="bg-surface-container rounded-xl p-space-lg flex flex-col justify-between shadow-lg hover:bg-surface-container-high transition-all">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-code-sm text-code-sm px-2 py-0.5 rounded bg-surface-container-highest text-secondary font-bold">PHASE 01</span>
+<span class="font-label-caps text-label-caps text-tertiary">Week 1: Core Engine</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">In-Memory Concurrent Engine</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Build the deterministic state machine. Implement lock-free or striped RWMutex skip-lists capable of over 100k operations per second with microsecond read latencies.
+            </p>
+<div class="p-space-sm bg-surface-container-lowest rounded-lg font-code-sm text-code-sm text-on-surface space-y-1">
+<div class="text-outline-variant font-medium">// Key Interfaces</div>
+<div><span class="text-primary">Apply</span>(cmd Command) Result</div>
+<div><span class="text-secondary">Get</span>(key []byte) ([]byte, bool)</div>
+<div><span class="text-tertiary">CreateSnapshot</span>() SnapshotHandle</div>
+</div>
+</div>
+<div class="mt-space-md flex flex-wrap gap-1">
+<span class="px-2 py-0.5 bg-surface-container-lowest rounded font-code-sm text-[10px] text-on-surface-variant">Skip-Lists</span>
+<span class="px-2 py-0.5 bg-surface-container-lowest rounded font-code-sm text-[10px] text-on-surface-variant">RWMutex Stripping</span>
+<span class="px-2 py-0.5 bg-surface-container-lowest rounded font-code-sm text-[10px] text-on-surface-variant">Zero-Copy Slices</span>
+</div>
+</div>
+<!-- Phase 2 -->
+<div class="bg-surface-container rounded-xl p-space-lg flex flex-col justify-between shadow-lg hover:bg-surface-container-high transition-all">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-code-sm text-code-sm px-2 py-0.5 rounded bg-surface-container-highest text-primary font-bold">PHASE 02</span>
+<span class="font-label-caps text-label-caps text-tertiary">Week 2: Consensus</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Raft Core &amp; Elections</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              State transitions between Follower, Candidate, and Leader. Randomized election timeouts (150ms–300ms) with heartbeat ticker channels to prevent split-vote thrashing.
+            </p>
+<div class="p-space-sm bg-surface-container-lowest rounded-lg font-code-sm text-code-sm text-on-surface space-y-1">
+<div class="text-outline-variant font-medium">// Timers &amp; Quorums</div>
+<div>timer = randTimeout(150, 300)</div>
+<div>if votes &gt; len(peers)/2 { <span class="text-tertiary">becomeLeader()</span> }</div>
+<div>broadcastHeartbeats(tick=50ms)</div>
+</div>
+</div>
+<div class="mt-space-md flex flex-wrap gap-1">
+<span class="px-2 py-0.5 bg-surface-container-lowest rounded font-code-sm text-[10px] text-on-surface-variant">RPC Timers</span>
+<span class="px-2 py-0.5 bg-surface-container-lowest rounded font-code-sm text-[10px] text-on-surface-variant">Term Invariants</span>
+<span class="px-2 py-0.5 bg-surface-container-lowest rounded font-code-sm text-[10px] text-on-surface-variant">Atomic Swaps</span>
+</div>
+</div>
+<!-- Phase 3 -->
+<div class="bg-surface-container rounded-xl p-space-lg flex flex-col justify-between shadow-lg hover:bg-surface-container-high transition-all">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-code-sm text-code-sm px-2 py-0.5 rounded bg-surface-container-highest text-secondary font-bold">PHASE 03</span>
+<span class="font-label-caps text-label-caps text-tertiary">Week 2–3: Durability</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Log Replication &amp; Safety</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Replicate log entries across followers using AppendEntries. Manage leader <code class="text-secondary font-code-sm">matchIndex</code> and <code class="text-secondary font-code-sm">nextIndex</code>. Enforce Raft log matching invariants.
+            </p>
+<div class="p-space-sm bg-surface-container-lowest rounded-lg font-code-sm text-code-sm text-on-surface space-y-1">
+<div class="text-outline-variant font-medium">// Log Repair Engine</div>
+<div>if entry.Term != log[prevLogIndex].Term {</div>
+<div class="pl-2 text-error">rejectAppend(); nextIndex[peer]--</div>
+<div>}</div>
+</div>
+</div>
+<div class="mt-space-md flex flex-wrap gap-1">
+<span class="px-2 py-0.5 bg-surface-container-lowest rounded font-code-sm text-[10px] text-on-surface-variant">Write-Ahead Log</span>
+<span class="px-2 py-0.5 bg-surface-container-lowest rounded font-code-sm text-[10px] text-on-surface-variant">Commit Index Safety</span>
+<span class="px-2 py-0.5 bg-surface-container-lowest rounded font-code-sm text-[10px] text-on-surface-variant">gRPC Streams</span>
+</div>
+</div>
+<!-- Phase 4 -->
+<div class="bg-surface-container rounded-xl p-space-lg flex flex-col justify-between shadow-lg hover:bg-surface-container-high transition-all">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-code-sm text-code-sm px-2 py-0.5 rounded bg-surface-container-highest text-tertiary font-bold">PHASE 04</span>
+<span class="font-label-caps text-label-caps text-tertiary">Week 3: Memory Safety</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Log Snapshot Compaction</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Prevent infinite disk and memory growth. Discard applied log entries by creating periodic point-in-time state machine snapshots and streaming them via <code class="text-tertiary font-code-sm">InstallSnapshot</code> to lagging nodes.
+            </p>
+<div class="p-space-sm bg-surface-container-lowest rounded-lg font-code-sm text-code-sm text-on-surface space-y-1">
+<div class="text-outline-variant font-medium">// Compaction Trigger</div>
+<div>if log.Bytes() &gt; maxThreshold {</div>
+<div class="pl-2 text-tertiary">compactToSnapshot(lastApplied)</div>
+<div>}</div>
+</div>
+</div>
+<div class="mt-space-md flex flex-wrap gap-1">
+<span class="px-2 py-0.5 bg-surface-container-lowest rounded font-code-sm text-[10px] text-on-surface-variant">Dynamic Cluster Reconfig</span>
+<span class="px-2 py-0.5 bg-surface-container-lowest rounded font-code-sm text-[10px] text-on-surface-variant">Snapshot Chunks</span>
+</div>
+</div>
+<!-- Phase 5 (Spans 2 columns on lg) -->
+<div class="bg-surface-container rounded-xl p-space-lg flex flex-col justify-between shadow-lg hover:bg-surface-container-high transition-all lg:col-span-2">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-code-sm text-code-sm px-2 py-0.5 rounded bg-surface-container-highest text-error font-bold">PHASE 05</span>
+<span class="font-label-caps text-label-caps text-tertiary">Week 4: The FAANG Differentiator</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Chaos Engineering &amp; Jepsen Matrix Testing</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              This phase turns a basic student project into a Tier-1 candidate showcase. Write deterministic network simulation harnesses introducing 30% synthetic packet drops, sudden SIGKILL leader crashes, and asymmetric network partitions.
+            </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm pt-space-xs">
+<div class="p-space-sm bg-surface-container-lowest rounded-lg font-code-sm text-code-sm">
+<span class="text-secondary font-bold block mb-1">Partition Simulation</span>
+<span class="text-on-surface-variant">Split nodes into subsets [A, B] and [C, D, E]. Verify majority quorum continues accepting writes while minority subset rejects with ErrNotLeader.</span>
+</div>
+<div class="p-space-sm bg-surface-container-lowest rounded-lg font-code-sm text-code-sm">
+<span class="text-tertiary font-bold block mb-1">Linearizability Checker</span>
+<span class="text-on-surface-variant">Validate history logs with Porcupine / Knossos model checking to guarantee zero stale or uncommitted dirty reads.</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md flex flex-wrap gap-1">
+<span class="px-2 py-0.5 bg-surface-container-lowest rounded font-code-sm text-[10px] text-on-surface-variant">Chaos Engineering</span>
+<span class="px-2 py-0.5 bg-surface-container-lowest rounded font-code-sm text-[10px] text-on-surface-variant">Porcupine Model Checker</span>
+<span class="px-2 py-0.5 bg-surface-container-lowest rounded font-code-sm text-[10px] text-on-surface-variant">p99 Benchmarking</span>
+<span class="px-2 py-0.5 bg-surface-container-lowest rounded font-code-sm text-[10px] text-on-surface-variant">pprof CPU / Mem Flamegraphs</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 4: Resume Goldmine Box (ATS Ready) -->
+<div class="w-full bg-surface-container-high rounded-xl p-space-lg sm:p-space-xl shadow-2xl relative" id="resume-goldmine">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md mb-space-lg pb-space-md border-b-0">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-caps text-label-caps uppercase text-secondary font-bold">Quantified Recruiter High-Signal Content</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">Resume Goldmine: ATS-Optimized Bullets</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Directly copyable, metric-dense bullets mapped to Senior SWE &amp; Staff Intern screening rubrics.</p>
+</div>
+<button class="self-start sm:self-center px-space-md py-2.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-highest font-code-sm text-code-sm flex items-center gap-space-xs transition-all shadow-md active:scale-95" id="copy-all-btn" onclick="copyAllBullets()" type="button">
+<span class="material-symbols-outlined text-base text-secondary" id="copy-all-icon">content_copy</span>
+<span id="copy-all-text">Copy All 3 Bullets</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Bullet 1 -->
+<div class="bg-surface-container rounded-lg p-space-md flex items-start justify-between gap-space-md group hover:bg-surface-container-highest transition-colors">
+<div class="flex items-start gap-space-md">
+<span class="font-code-lg text-code-lg text-secondary font-bold mt-0.5">01</span>
+<div class="space-y-1">
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed" id="bullet-1">
+                Designed and implemented a distributed key-value store in Go with Raft consensus, maintaining linearizable consistency across 5 nodes under simulated 30% network packet loss.
+              </p>
+<div class="flex flex-wrap items-center gap-space-sm pt-1">
+<span class="font-label-caps text-label-caps text-outline uppercase">Signals:</span>
+<span class="font-code-sm text-code-sm text-tertiary">Distributed Algorithms</span>
+<span class="text-outline-variant">•</span>
+<span class="font-code-sm text-code-sm text-secondary">Network Resilience</span>
+<span class="text-outline-variant">•</span>
+<span class="font-code-sm text-code-sm text-primary">Linearizability</span>
+</div>
+</div>
+</div>
+<button class="p-2 rounded bg-surface-container-lowest text-on-surface-variant hover:text-on-surface flex-shrink-0 transition-colors" onclick="copyIndividualBullet('bullet-1', this)" title="Copy bullet" type="button">
+<span class="material-symbols-outlined text-base">copy_all</span>
+</button>
+</div>
+<!-- Bullet 2 -->
+<div class="bg-surface-container rounded-lg p-space-md flex items-start justify-between gap-space-md group hover:bg-surface-container-highest transition-colors">
+<div class="flex items-start gap-space-md">
+<span class="font-code-lg text-code-lg text-secondary font-bold mt-0.5">02</span>
+<div class="space-y-1">
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed" id="bullet-2">
+                Slashed p99 write latency to 4.8ms under 25,000 ops/sec load by optimizing gRPC connection pooling and zero-allocation protobuf byte buffers.
+              </p>
+<div class="flex flex-wrap items-center gap-space-sm pt-1">
+<span class="font-label-caps text-label-caps text-outline uppercase">Signals:</span>
+<span class="font-code-sm text-code-sm text-tertiary">Memory Profiling</span>
+<span class="text-outline-variant">•</span>
+<span class="font-code-sm text-code-sm text-secondary">High Throughput</span>
+<span class="text-outline-variant">•</span>
+<span class="font-code-sm text-code-sm text-primary">RPC Serialization</span>
+</div>
+</div>
+</div>
+<button class="p-2 rounded bg-surface-container-lowest text-on-surface-variant hover:text-on-surface flex-shrink-0 transition-colors" onclick="copyIndividualBullet('bullet-2', this)" title="Copy bullet" type="button">
+<span class="material-symbols-outlined text-base">copy_all</span>
+</button>
+</div>
+<!-- Bullet 3 -->
+<div class="bg-surface-container rounded-lg p-space-md flex items-start justify-between gap-space-md group hover:bg-surface-container-highest transition-colors">
+<div class="flex items-start gap-space-md">
+<span class="font-code-lg text-code-lg text-secondary font-bold mt-0.5">03</span>
+<div class="space-y-1">
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed" id="bullet-3">
+                Built automated chaos test suite verifying leader election recovery in &lt;150ms during ungraceful leader terminations.
+              </p>
+<div class="flex flex-wrap items-center gap-space-sm pt-1">
+<span class="font-label-caps text-label-caps text-outline uppercase">Signals:</span>
+<span class="font-code-sm text-code-sm text-tertiary">Fault Recovery</span>
+<span class="text-outline-variant">•</span>
+<span class="font-code-sm text-code-sm text-secondary">Jepsen Chaos Testing</span>
+<span class="text-outline-variant">•</span>
+<span class="font-code-sm text-code-sm text-primary">High Availability</span>
+</div>
+</div>
+</div>
+<button class="p-2 rounded bg-surface-container-lowest text-on-surface-variant hover:text-on-surface flex-shrink-0 transition-colors" onclick="copyIndividualBullet('bullet-3', this)" title="Copy bullet" type="button">
+<span class="material-symbols-outlined text-base">copy_all</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Section 5: Interview Defense Q&A (Technical Grilling Simulator) -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-end justify-between">
+<div>
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> The Grilling Room
+          </span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-0.5">Interview Defense Q&amp;A Blueprint</h2>
+</div>
+<span class="font-code-sm text-code-sm text-outline hidden md:block">Expected in Google L4 / Meta E4 Systems Loops</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-md">
+<!-- Q&A Card 1 -->
+<div class="bg-surface-container rounded-xl p-space-lg flex flex-col justify-between shadow-lg">
+<div>
+<div class="flex items-center gap-space-xs text-error font-code-sm text-code-sm font-semibold mb-space-sm">
+<span class="material-symbols-outlined text-base">warning</span>
+<span>Question 01 • Safety Invariant</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">
+              "How do you handle Split-Brain when a partitioned former leader keeps taking writes?"
+            </h3>
+<div class="mt-space-md space-y-space-sm text-on-surface-variant font-body-md text-body-md">
+<p>
+<strong class="text-on-surface">The Defense:</strong> Raft completely eliminates split-brain by requiring a strict majority quorum (<code class="font-code-sm text-secondary">N/2 + 1</code>) before committing any entry to the log.
+              </p>
+<p>
+                If an old leader is isolated in a minority partition (e.g., 2 nodes out of 5), it will accept client writes conditionally, but its <code class="font-code-sm text-secondary">AppendEntries</code> RPCs will never gain quorum approval. It cannot advance its <code class="font-code-sm text-secondary">commitIndex</code>.
+              </p>
+<div class="p-space-sm bg-surface-container-lowest rounded-lg font-code-sm text-code-sm text-tertiary">
+                &gt; Follow-up nuance: Implement Leader Leases or ReadIndex verification to ensure linearizable stale-read prevention during transient partitions.
+              </div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between text-code-sm font-code-sm text-outline">
+<span>Interview Frequency: Very High</span>
+<span class="text-primary font-bold">100% Core</span>
+</div>
+</div>
+<!-- Q&A Card 2 -->
+<div class="bg-surface-container rounded-xl p-space-lg flex flex-col justify-between shadow-lg">
+<div>
+<div class="flex items-center gap-space-xs text-secondary font-code-sm text-code-sm font-semibold mb-space-sm">
+<span class="material-symbols-outlined text-base">psychology</span>
+<span>Question 02 • Architectural Tradeoffs</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">
+              "Why did you choose Go over C++ or Rust for this consensus implementation?"
+            </h3>
+<div class="mt-space-md space-y-space-sm text-on-surface-variant font-body-md text-body-md">
+<p>
+<strong class="text-on-surface">The Defense:</strong> Go provides first-class primitives for CSP concurrency (<code class="font-code-sm text-secondary">goroutines</code>, <code class="font-code-sm text-secondary">channels</code>, and <code class="font-code-sm text-secondary">select</code>), which directly maps to Raft's asynchronous state machine timers and RPC heartbeats.
+              </p>
+<p>
+                While Rust provides zero-cost abstractions without GC pauses, Go allowed us to hit 4.8ms p99 write latency by pre-allocating byte slice memory pools (<code class="font-code-sm text-secondary">sync.Pool</code>) to avoid GC thrashing while drastically accelerating development velocity.
+              </p>
+<div class="p-space-sm bg-surface-container-lowest rounded-lg font-code-sm text-code-sm text-secondary">
+                &gt; Demonstrates pragmatic engineering judgment rather than dogmatic language partisanship.
+              </div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between text-code-sm font-code-sm text-outline">
+<span>Interview Frequency: High</span>
+<span class="text-primary font-bold">Design Tradeoff</span>
+</div>
+</div>
+<!-- Q&A Card 3 -->
+<div class="bg-surface-container rounded-xl p-space-lg flex flex-col justify-between shadow-lg">
+<div>
+<div class="flex items-center gap-space-xs text-tertiary font-code-sm text-code-sm font-semibold mb-space-sm">
+<span class="material-symbols-outlined text-base">memory</span>
+<span>Question 03 • Production Longevity</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">
+              "How does your log compaction avoid memory exhaustion without blocking incoming writes?"
+            </h3>
+<div class="mt-space-md space-y-space-sm text-on-surface-variant font-body-md text-body-md">
+<p>
+<strong class="text-on-surface">The Defense:</strong> We decoupled snapshot generation using Copy-on-Write (CoW) semantics on the underlying in-memory Skip-List. 
+              </p>
+<p>
+                When a snapshot threshold is hit (e.g. 50,000 entries), a background worker acquires a brief read-lock to clone the root pointer, then asynchronously serializes the snapshot to an mmap disk buffer without stalling the active leader's gRPC ingest path.
+              </p>
+<div class="p-space-sm bg-surface-container-lowest rounded-lg font-code-sm text-code-sm text-tertiary">
+                &gt; Mention InstallSnapshot streaming via chunked gRPC streams for nodes that rejoin after extended outages.
+              </div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between text-code-sm font-code-sm text-outline">
+<span>Interview Frequency: High</span>
+<span class="text-primary font-bold">Storage Internals</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 6: Comprehensive Benchmark & Tech Stack Spec Table -->
+<div class="w-full bg-surface-container rounded-xl p-space-lg shadow-xl overflow-hidden mb-space-xl">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm mb-space-md">
+<div>
+<span class="font-label-caps text-label-caps uppercase text-secondary font-bold">Standard Benchmarks</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Load &amp; Partition Verification Matrix</h3>
+</div>
+<div class="flex items-center gap-2 font-code-sm text-code-sm">
+<span class="px-2 py-1 rounded bg-surface-container-lowest text-tertiary">Node Setup: 5x AWS c6i.xlarge</span>
+<span class="px-2 py-1 rounded bg-surface-container-lowest text-outline">Network: VPC 10Gbps</span>
+</div>
+</div>
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left font-body-md text-body-md">
+<thead>
+<tr class="bg-surface-container-lowest text-outline font-label-caps text-label-caps uppercase tracking-wider">
+<th class="py-2.5 px-space-md">Scenario / Test Harness</th>
+<th class="py-2.5 px-space-md">Workload Type</th>
+<th class="py-2.5 px-space-md text-right">Throughput</th>
+<th class="py-2.5 px-space-md text-right">P50 Latency</th>
+<th class="py-2.5 px-space-md text-right">P99 Latency</th>
+<th class="py-2.5 px-space-md text-right">Data Consistency</th>
+</tr>
+</thead>
+<tbody class="divide-y-0">
+<tr class="hover:bg-surface-container-high/50 transition-colors">
+<td class="py-space-sm px-space-md font-code-sm text-code-sm text-on-surface font-semibold flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span> Baseline Steady State
+              </td>
+<td class="py-space-sm px-space-md text-on-surface-variant font-code-sm text-code-sm">80% Read / 20% Write</td>
+<td class="py-space-sm px-space-md text-right font-code-sm text-code-sm text-tertiary">48,200 ops/s</td>
+<td class="py-space-sm px-space-md text-right font-code-sm text-code-sm text-on-surface">0.82ms</td>
+<td class="py-space-sm px-space-md text-right font-code-sm text-code-sm text-secondary font-bold">2.41ms</td>
+<td class="py-space-sm px-space-md text-right font-code-sm text-code-sm text-tertiary">Linearizable (0 Errors)</td>
+</tr>
+<tr class="hover:bg-surface-container-high/50 transition-colors">
+<td class="py-space-sm px-space-md font-code-sm text-code-sm text-on-surface font-semibold flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> Write Intensive Burst
+              </td>
+<td class="py-space-sm px-space-md text-on-surface-variant font-code-sm text-code-sm">100% Sequential Writes</td>
+<td class="py-space-sm px-space-md text-right font-code-sm text-code-sm text-tertiary">25,120 ops/s</td>
+<td class="py-space-sm px-space-md text-right font-code-sm text-code-sm text-on-surface">1.45ms</td>
+<td class="py-space-sm px-space-md text-right font-code-sm text-code-sm text-secondary font-bold">4.82ms</td>
+<td class="py-space-sm px-space-md text-right font-code-sm text-code-sm text-tertiary">Linearizable (0 Errors)</td>
+</tr>
+<tr class="hover:bg-surface-container-high/50 transition-colors">
+<td class="py-space-sm px-space-md font-code-sm text-code-sm text-on-surface font-semibold flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-error"></span> Leader Crash (SIGKILL)
+              </td>
+<td class="py-space-sm px-space-md text-on-surface-variant font-code-sm text-code-sm">Random Termination</td>
+<td class="py-space-sm px-space-md text-right font-code-sm text-code-sm text-outline">Dips to 0 for 120ms</td>
+<td class="py-space-sm px-space-md text-right font-code-sm text-code-sm text-on-surface">Election: 124ms</td>
+<td class="py-space-sm px-space-md text-right font-code-sm text-code-sm text-error font-bold">Recovery &lt; 148ms</td>
+<td class="py-space-sm px-space-md text-right font-code-sm text-code-sm text-tertiary">Zero Uncommitted Overwrites</td>
+</tr>
+<tr class="hover:bg-surface-container-high/50 transition-colors">
+<td class="py-space-sm px-space-md font-code-sm text-code-sm text-on-surface font-semibold flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary"></span> 30% Net-Drop Partition
+              </td>
+<td class="py-space-sm px-space-md text-on-surface-variant font-code-sm text-code-sm">Jepsen Nemesis Partition</td>
+<td class="py-space-sm px-space-md text-right font-code-sm text-code-sm text-on-surface">18,400 ops/s</td>
+<td class="py-space-sm px-space-md text-right font-code-sm text-code-sm text-on-surface">2.10ms</td>
+<td class="py-space-sm px-space-md text-right font-code-sm text-code-sm text-secondary font-bold">8.12ms</td>
+<td class="py-space-sm px-space-md text-right font-code-sm text-code-sm text-tertiary">Knossos Passed (No Stale Reads)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<script>
+    function copyIndividualBullet(bulletId, btnElement) {
+      const text = document.getElementById(bulletId).innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        const icon = btnElement.querySelector('.material-symbols-outlined');
+        const origIcon = icon.innerText;
+        icon.innerText = 'check';
+        icon.classList.add('text-tertiary');
+        setTimeout(() => {
+          icon.innerText = origIcon;
+          icon.classList.remove('text-tertiary');
+        }, 1500);
+      });
+    }
+
+    function copyAllBullets() {
+      const b1 = document.getElementById('bullet-1').innerText;
+      const b2 = document.getElementById('bullet-2').innerText;
+      const b3 = document.getElementById('bullet-3').innerText;
+      const fullText = `• ${b1}\n• ${b2}\n• ${b3}`;
+
+      navigator.clipboard.writeText(fullText).then(() => {
+        const btnText = document.getElementById('copy-all-text');
+        const btnIcon = document.getElementById('copy-all-icon');
+        const origText = btnText.innerText;
+        btnText.innerText = 'Copied All to Clipboard!';
+        btnIcon.innerText = 'check_circle';
+        btnIcon.classList.add('text-tertiary');
+        setTimeout(() => {
+          btnText.innerText = origText;
+          btnIcon.innerText = 'content_copy';
+          btnIcon.classList.remove('text-tertiary');
+        }, 2000);
+      });
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest border-t border-outline-variant/20 py-space-lg mt-auto"><div class="w-full px-gutter flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><span class="font-code-sm text-code-sm text-on-surface-variant">© 2025 InternTrack Telemetry Engine</span><span class="text-outline-variant">•</span><span class="font-code-sm text-code-sm text-tertiary">v2.8.4-prod</span></div><div class="flex items-center gap-space-md font-code-sm text-code-sm text-on-surface-variant"><span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-tertiary"></span>Pipeline Latency: 14ms</span><span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-secondary"></span>FAANG Scraping: Online</span></div></div></footer></body></html>

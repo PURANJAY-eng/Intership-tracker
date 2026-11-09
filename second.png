@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {"on-tertiary-container": "#000703", "surface-container": "#171f33", "inverse-surface": "#dae2fd", "tertiary-fixed": "#6ffbbe", secondary: "#4cd7f6", "on-surface-variant": "#c7c4d7", "secondary-fixed-dim": "#4cd7f6", "on-tertiary": "#003824", "surface-container-low": "#131b2e", "tertiary-fixed-dim": "#4edea3", "surface-tint": "#c0c1ff", "error-container": "#93000a", error: "#ffb4ab", "surface-variant": "#2d3449", "on-secondary-fixed-variant": "#004e5c", "surface-container-highest": "#2d3449", "on-tertiary-fixed-variant": "#005236", "on-secondary-fixed": "#001f26", "on-background": "#dae2fd", "surface-dim": "#0b1326", "outline-variant": "#464554", "on-primary-container": "#0d0096", primary: "#c0c1ff", background: "#0b1326", "tertiary-container": "#00885d", surface: "#0b1326", "primary-fixed": "#e1e0ff", "inverse-on-surface": "#283044", "on-secondary-container": "#00424e", "on-surface": "#dae2fd", "secondary-fixed": "#acedff", "on-tertiary-fixed": "#002113", "primary-fixed-dim": "#c0c1ff", "on-error": "#690005", "on-primary-fixed": "#07006c", "surface-container-high": "#222a3d", "surface-container-lowest": "#060e20", "on-error-container": "#ffdad6", "on-secondary": "#003640", "primary-container": "#8083ff", "inverse-primary": "#494bd6", tertiary: "#4edea3", "on-primary": "#1000a9", "surface-bright": "#31394d", outline: "#908fa0", "on-primary-fixed-variant": "#2f2ebe", "secondary-container": "#03b5d3"}, borderRadius: {DEFAULT: "0.125rem", lg: "0.25rem", xl: "0.5rem", full: "0.75rem"}, spacing: {gutter: "1rem", "space-xs": "0.25rem", "space-xl": "2rem", "space-sm": "0.5rem", margin: "1.5rem", "space-lg": "1.25rem", "space-md": "0.75rem"}, fontFamily: {"headline-sm": ["Plus Jakarta Sans"], "label-caps": ["JetBrains Mono"], "body-md": ["Inter"], "body-lg": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "code-lg": ["JetBrains Mono"], "code-sm": ["JetBrains Mono"], "code-md": ["JetBrains Mono"], "body-sm": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], headline: ["Plus Jakarta Sans"], display: ["Plus Jakarta Sans"], body: ["Inter"], label: ["JetBrains Mono"]}, fontSize: {"headline-sm": ["18px", {lineHeight: "26px", letterSpacing: "-0.01em", fontWeight: "600"}], "label-caps": ["10px", {lineHeight: "12px", letterSpacing: "0.08em", fontWeight: "600"}], "body-md": ["14px", {lineHeight: "20px", letterSpacing: "0em", fontWeight: "400"}], "body-lg": ["16px", {lineHeight: "24px", letterSpacing: "-0.01em", fontWeight: "400"}], "headline-md": ["22px", {lineHeight: "30px", letterSpacing: "-0.015em", fontWeight: "600"}], "code-lg": ["14px", {lineHeight: "20px", letterSpacing: "-0.01em", fontWeight: "500"}], "code-sm": ["11px", {lineHeight: "14px", letterSpacing: "0.02em", fontWeight: "400"}], "code-md": ["12px", {lineHeight: "16px", letterSpacing: "0em", fontWeight: "500"}], "body-sm": ["12px", {lineHeight: "18px", letterSpacing: "0.01em", fontWeight: "400"}], "headline-lg": ["30px", {lineHeight: "38px", letterSpacing: "-0.02em", fontWeight: "700"}], "display-lg": ["40px", {lineHeight: "48px", letterSpacing: "-0.03em", fontWeight: "700"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.35)]"><div class="h-16 w-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md flex-shrink-0"><div class="flex items-center gap-space-sm"><img alt="InternTrack Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UgqWSBiplGO6KWzuopYcvUkLLJrQ3v5_-BpB_Nr3Pvq4V3bw8vbavoXTw6jRp_dOPnJxIMTZM8jBmzeFP5VfJJNNtVC1bD972I83CVpYKuvhq0EtGhHoxvIPufNv3AUf_yaBidEQNjh8TMIE5VCG-Mhuw5_LeiU5P9rM9hITjeToxXl4hIzZCG61Va1EOmsB4pD4utqmfQfDR11WU6LQq6tf8C8njjWBSF2TU-w9eOej7hk9L-lW2abYLp"/><span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">InternTrack</span></div><div class="hidden sm:inline-flex items-center px-space-sm py-space-xs rounded-full bg-surface-container-high border border-outline-variant/40"><span class="font-code-sm text-code-sm text-tertiary font-medium">FAANG 2025</span></div></div><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-semibold rounded-lg shadow-[0_0_12px_rgba(128,131,255,0.3)]"><a class="px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="deadlines-hub" href="#">Deadlines Hub</a><a aria-current="page" class="px-space-md py-space-sm transition-colors bg-primary-container text-on-primary font-semibold rounded-lg shadow-[0_0_12px_rgba(128,131,255,0.3)]" data-path="company-guides" href="#">Company Guides</a><a class="px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="standout-projects" href="#">Standout Projects</a><a class="px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="my-applications" href="#">My Applications</a></nav><div class="flex items-center gap-space-sm flex-1 max-w-xl justify-end"><div class="relative w-full max-w-xs hidden md:block"><span class="material-symbols-outlined absolute left-2.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-base select-none pointer-events-none">search</span><input class="w-full pl-8 pr-space-sm py-1.5 bg-surface-container-lowest text-on-surface placeholder:text-outline border border-outline-variant/50 rounded-lg font-code-sm text-code-sm focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-all" placeholder="Search companies, roles (e.g. Google SWE, Kafka)..." type="text"/></div><div class="hidden lg:flex items-center gap-1.5 px-space-sm py-1.5 bg-surface-container-low border border-outline-variant/40 rounded-lg"><span class="w-2 h-2 rounded-full bg-tertiary shadow-[0_0_6px_#4edea3]"></span><span class="font-code-sm text-code-sm text-on-surface">Summer 2025</span><span class="font-label-caps text-label-caps uppercase text-tertiary bg-surface-container px-1 py-0.5 rounded">Active</span><span class="material-symbols-outlined text-on-surface-variant text-sm cursor-pointer">arrow_drop_down</span></div><div class="flex items-center gap-1"><button class="p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg transition-colors flex items-center justify-center" title="Starred Bookmarks" type="button"><span class="material-symbols-outlined text-lg">star</span></button><button class="p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg transition-colors relative flex items-center justify-center" title="Notifications" type="button"><span class="material-symbols-outlined text-lg">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 bg-secondary rounded-full shadow-[0_0_6px_#4cd7f6]"></span></button></div><div class="flex items-center gap-space-sm pl-space-xs border-l border-outline-variant/40"><div class="flex flex-col text-right hidden 2xl:flex"><span class="font-body-sm text-body-sm text-on-surface font-medium leading-none">Alex Chen</span><span class="font-code-sm text-code-sm text-on-surface-variant leading-none mt-1">CS @ Berkeley</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-primary-container/40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3xcZQ_oh54vYggICgfPWIF5X_k7rWXJUIeqolj-Ingd20UgjXTOLoDmGKT0OlTRZuBaS_8beMVJUcJ4ya8XulzsH_5e-kAcpSpkSjSAvKIyt7njxLj2s1HJlcq9OXsOrtGNj7v_XyHYWol_7HjPEeGlcAcQpcBA-DCKqbGy8iM__l-yxZ7cviPZ66LwTrJF4IR3vrQYgNnr5vvu23F6xsPpl3-s_qoN6xxPzmMBHk4tsUcyCkPTgaiw"/></div></div></div></header><main class="w-full pt-16 bg-surface flex-1"><div class="flex flex-col w-full">
+<!-- Sub-Header Status Rail & Filter Command Bar -->
+<div class="w-full bg-surface-container-lowest px-gutter py-space-md shadow-md">
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<!-- Breadcrumb & Cohort Scope -->
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="font-label-caps text-label-caps uppercase text-outline tracking-wider">Company Guides</span>
+<span class="font-code-sm text-code-sm text-outline-variant">/</span>
+<span class="font-code-md text-code-md text-primary font-medium">Big Tech SWE Playbooks</span>
+<span class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-surface-container-high text-tertiary font-code-sm text-code-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span>
+          2025 Cycle Live
+        </span>
+</div>
+<!-- Quick Action Right Group -->
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container font-code-sm text-code-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors flex items-center gap-1.5 shadow-sm" type="button">
+<span class="material-symbols-outlined text-base text-secondary">tune</span>
+          Filter by Track
+        </button>
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container font-code-sm text-code-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors flex items-center gap-1.5 shadow-sm" type="button">
+<span class="material-symbols-outlined text-base text-tertiary">download</span>
+          Export Rubric PDF
+        </button>
+</div>
+</div>
+<!-- Company Tabs Rail -->
+<div class="max-w-7xl mx-auto mt-space-md pt-space-xs overflow-x-auto">
+<div class="flex items-center gap-space-xs min-w-max pb-1" id="companyTabs">
+<!-- Google (Active) -->
+<button class="px-space-md py-2 rounded-lg bg-primary-container text-on-primary font-code-md text-code-md font-semibold flex items-center gap-2 shadow-sm transition-all" type="button">
+<span class="w-2 h-2 rounded-full bg-on-primary"></span>
+          Google
+          <span class="text-on-primary/80 font-code-sm text-code-sm ml-1 px-1.5 py-0.5 rounded bg-surface-container-lowest/30">Active</span>
+</button>
+<!-- Meta -->
+<button class="px-space-md py-2 rounded-lg bg-surface-container font-code-md text-code-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all flex items-center gap-2" type="button">
+<span>Meta</span>
+<span class="text-outline font-code-sm text-code-sm">E3 Track</span>
+</button>
+<!-- Apple -->
+<button class="px-space-md py-2 rounded-lg bg-surface-container font-code-md text-code-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all flex items-center gap-2" type="button">
+<span>Apple</span>
+<span class="text-tertiary font-code-sm text-code-sm">Firmware/OS</span>
+</button>
+<!-- Amazon -->
+<button class="px-space-md py-2 rounded-lg bg-surface-container font-code-md text-code-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all flex items-center gap-2" type="button">
+<span>Amazon</span>
+<span class="text-outline font-code-sm text-code-sm">SDE I</span>
+</button>
+<!-- Netflix -->
+<button class="px-space-md py-2 rounded-lg bg-surface-container font-code-md text-code-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all flex items-center gap-2" type="button">
+<span>Netflix</span>
+<span class="text-error font-code-sm text-code-sm">Select Pools</span>
+</button>
+<!-- Microsoft -->
+<button class="px-space-md py-2 rounded-lg bg-surface-container font-code-md text-code-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all flex items-center gap-2" type="button">
+<span>Microsoft</span>
+<span class="text-secondary font-code-sm text-code-sm">Explore / SWE</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Primary Guide Content Grid -->
+<div class="w-full px-gutter py-space-xl max-w-7xl mx-auto flex flex-col gap-space-xl">
+<!-- 2. Company Hero Dossier Card -->
+<div class="relative bg-surface-container-low rounded-xl p-space-lg md:p-space-xl shadow-xl overflow-hidden">
+<!-- Glow ambient backplate -->
+<div class="absolute -right-20 -top-20 w-80 h-80 rounded-full bg-primary-container/10 blur-3xl pointer-events-none"></div>
+<div class="absolute right-1/3 -bottom-24 w-96 h-96 rounded-full bg-secondary/5 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-lg">
+<!-- Top Meta Bar & Role Headline -->
+<div class="flex flex-col xl:flex-row xl:items-start justify-between gap-space-md">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="px-space-sm py-0.5 rounded-full bg-primary/10 text-primary font-label-caps text-label-caps uppercase tracking-wider">Target Playbook 2025</span>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-code-sm text-code-sm">Role ID: GOOG-SWE-SUM25</span>
+<span class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-tertiary/10 text-tertiary font-code-sm text-code-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> High Hiring Volume
+              </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">
+              Google Software Engineering Internship (Summer 2025)
+            </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+              Comprehensive technical evaluation blueprint, pipeline timing windows, and verified system architecture standards for generalist and systems track candidates.
+            </p>
+</div>
+<!-- Quick Bookmark / Action -->
+<div class="flex items-center gap-space-sm self-start">
+<button class="px-space-md py-2 rounded-lg bg-primary-container text-on-primary font-headline-sm text-headline-sm font-semibold hover:opacity-90 transition-opacity flex items-center gap-2 shadow-md" type="button">
+<span class="material-symbols-outlined text-base">send</span>
+              Apply via Portal
+            </button>
+<button class="p-2 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" title="Bookmark Track" type="button">
+<span class="material-symbols-outlined text-xl">bookmark_add</span>
+</button>
+</div>
+</div>
+<!-- Highlights Row Bento -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md pt-space-xs">
+<!-- Window -->
+<div class="bg-surface-container rounded-lg p-space-md flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between text-outline-variant">
+<span class="font-label-caps text-label-caps uppercase text-outline">Hiring Window</span>
+<span class="material-symbols-outlined text-lg text-secondary">calendar_today</span>
+</div>
+<div class="mt-space-sm">
+<div class="font-code-lg text-code-lg text-on-surface font-semibold">Aug 12 – Nov 15</div>
+<div class="font-code-sm text-code-sm text-secondary mt-0.5">Rolling evaluation; batch screens</div>
+</div>
+</div>
+<!-- Comp -->
+<div class="bg-surface-container rounded-lg p-space-md flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between text-outline-variant">
+<span class="font-label-caps text-label-caps uppercase text-outline">Typical Compensation</span>
+<span class="material-symbols-outlined text-lg text-tertiary">payments</span>
+</div>
+<div class="mt-space-sm">
+<div class="font-code-lg text-code-lg text-on-surface font-semibold">$58.50/hr</div>
+<div class="font-code-sm text-code-sm text-tertiary mt-0.5">+ Corporate housing / stipend ($9k)</div>
+</div>
+</div>
+<!-- Benchmark -->
+<div class="bg-surface-container rounded-lg p-space-md flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between text-outline-variant">
+<span class="font-label-caps text-label-caps uppercase text-outline">Acceptance Benchmark</span>
+<span class="material-symbols-outlined text-lg text-primary">analytics</span>
+</div>
+<div class="mt-space-sm">
+<div class="font-code-lg text-code-lg text-on-surface font-semibold">Top 2 – 3%</div>
+<div class="font-code-sm text-code-sm text-on-surface-variant mt-0.5">Estimated ~110k applicants</div>
+</div>
+</div>
+<!-- Locations -->
+<div class="bg-surface-container rounded-lg p-space-md flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between text-outline-variant">
+<span class="font-label-caps text-label-caps uppercase text-outline">Primary Hubs</span>
+<span class="material-symbols-outlined text-lg text-outline">location_on</span>
+</div>
+<div class="mt-space-sm">
+<div class="font-code-lg text-code-lg text-on-surface font-semibold">Mountain View, NYC</div>
+<div class="font-code-sm text-code-sm text-on-surface-variant mt-0.5">Seattle, Austin, Chicago</div>
+</div>
+</div>
+</div>
+<!-- Hiring Process Stages Pipeline -->
+<div class="mt-space-md bg-surface-container-lowest/80 rounded-xl p-space-lg">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-lg">conversion_path</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface font-semibold">Recruiting Lifecycle Stages</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Avg Duration: 4.8 Weeks</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Stage 1 -->
+<div class="bg-surface-container rounded-lg p-space-md flex flex-col justify-between shadow-sm relative group hover:bg-surface-container-high transition-colors">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="px-2 py-0.5 rounded bg-primary-container/20 text-primary font-code-sm text-code-sm font-semibold">STAGE 01</span>
+<span class="font-code-sm text-code-sm text-outline">Resume Gate</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Resume &amp; Automated Screen</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 leading-relaxed">
+                  Focus: High signal-to-noise ratio. Evaluators prioritize custom low-level projects and production-grade backends over boilerplate university coursework.
+                </p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between font-code-sm text-code-sm">
+<span class="text-tertiary">Pass Rate ~14%</span>
+<span class="text-outline-variant">Days 1-7</span>
+</div>
+</div>
+<!-- Stage 2 -->
+<div class="bg-surface-container rounded-lg p-space-md flex flex-col justify-between shadow-sm relative group hover:bg-surface-container-high transition-colors">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="px-2 py-0.5 rounded bg-primary-container/20 text-primary font-code-sm text-code-sm font-semibold">STAGE 02</span>
+<span class="font-code-sm text-code-sm text-outline">Algorithmic</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Technical Snapshot OA</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 leading-relaxed">
+                  90-minute timed algorithmic assessment. Two problems testing rigorous data structure utilization, edge-case coverage, and O(n log n) efficiency.
+                </p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between font-code-sm text-code-sm">
+<span class="text-tertiary">Pass Rate ~35%</span>
+<span class="text-outline-variant">Days 10-14</span>
+</div>
+</div>
+<!-- Stage 3 -->
+<div class="bg-surface-container rounded-lg p-space-md flex flex-col justify-between shadow-sm relative group hover:bg-surface-container-high transition-colors">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="px-2 py-0.5 rounded bg-primary-container/20 text-primary font-code-sm text-code-sm font-semibold">STAGE 03</span>
+<span class="font-code-sm text-code-sm text-outline">Live Rounds</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Two 45-Min Tech Interviews</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 leading-relaxed">
+                  Conducted via Google Docs / Internal IDE. Focus on algorithmic clarity, real-time code complexity trade-offs, and behavioral collaboration cues.
+                </p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between font-code-sm text-code-sm">
+<span class="text-secondary">Pass Rate ~22%</span>
+<span class="text-outline-variant">Days 21-28</span>
+</div>
+</div>
+<!-- Stage 4 -->
+<div class="bg-surface-container rounded-lg p-space-md flex flex-col justify-between shadow-sm relative group hover:bg-surface-container-high transition-colors">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="px-2 py-0.5 rounded bg-tertiary/20 text-tertiary font-code-sm text-code-sm font-semibold">STAGE 04</span>
+<span class="font-code-sm text-code-sm text-outline">Placement</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Project Search &amp; Match</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 leading-relaxed">
+                  Candidate profile enters the team-matching questionnaire. Managers in Cloud, Search, and Core Infrastructure select candidates aligned with their systems stack.
+                </p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between font-code-sm text-code-sm">
+<span class="text-tertiary">Match Rate ~85%</span>
+<span class="text-outline-variant">Days 30-40</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 3. Core Feature: Top Standout Projects That Pass the Google Resume Bar -->
+<div class="flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-wider font-semibold">Engineering Portfolio Architectures</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">
+            Top Standout Projects That Pass the Google Resume Bar
+          </h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">
+          Engineered blueprints specifically calibrated to catch the attention of Google SWE managers and hiring committee reviewers.
+        </p>
+</div>
+<!-- 3 Deep Project Breakdown Cards -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg">
+<!-- Project Card 1: Raft KV Store -->
+<div class="bg-surface-container-low rounded-xl p-space-lg flex flex-col justify-between shadow-lg hover:shadow-xl hover:bg-surface-container transition-all group">
+<div class="space-y-space-md">
+<!-- Header Pill / Meta -->
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-secondary/10 text-secondary font-code-sm text-code-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Consensus &amp; State
+              </span>
+<span class="font-code-sm text-code-sm text-outline font-medium">Difficulty: Hard</span>
+</div>
+<!-- Title & Archetype -->
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold group-hover:text-primary transition-colors">
+                Distributed In-Memory Raft Key-Value Store
+              </h3>
+<span class="font-code-sm text-code-sm text-tertiary block mt-1">Target Match: Google Cloud Spanner / Chubby Systems</span>
+</div>
+<!-- Why Google Loves It -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md space-y-1">
+<span class="font-label-caps text-label-caps uppercase text-outline">Why Google Loves It</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Proves deep understanding of distributed consensus, state machine replication, leader election under network partitions, and concurrent Go programming with high throughput.
+              </p>
+</div>
+<!-- Resume Impact Metric -->
+<div class="p-space-md rounded-lg bg-surface-container-high/60 space-y-1">
+<span class="font-label-caps text-label-caps uppercase text-secondary font-semibold">Resume Bullet Prototype</span>
+<p class="font-code-sm text-code-sm text-on-surface leading-normal">
+                “Engineered a Raft-consensus distributed KV store in Go using gRPC; sustained 42k ops/sec with sub-4ms p99 latency under simulated 30% node dropouts.”
+              </p>
+</div>
+<!-- Tech Stack Chips -->
+<div class="space-y-1.5">
+<span class="font-label-caps text-label-caps uppercase text-outline">Tech Stack</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-code-sm text-code-sm">Go</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-code-sm text-code-sm">gRPC</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-code-sm text-code-sm">Protobuf</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-code-sm text-code-sm">Docker</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-secondary font-code-sm text-code-sm">Raft Protocol</span>
+</div>
+</div>
+</div>
+<!-- Bottom Action -->
+<div class="mt-space-lg pt-space-md">
+<button class="w-full py-2.5 px-space-md rounded-lg bg-surface-container-high text-on-surface hover:bg-primary-container hover:text-on-primary font-headline-sm text-headline-sm font-semibold transition-all flex items-center justify-center gap-2 shadow-sm" type="button">
+<span>View Blueprint &amp; Code Guide</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Project Card 2: B-Tree Storage Engine with WAL -->
+<div class="bg-surface-container-low rounded-xl p-space-lg flex flex-col justify-between shadow-lg hover:shadow-xl hover:bg-surface-container transition-all group">
+<div class="space-y-space-md">
+<!-- Header Pill / Meta -->
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-primary/10 text-primary font-code-sm text-code-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Low-Level Storage
+              </span>
+<span class="font-code-sm text-code-sm text-outline font-medium">Difficulty: Hard</span>
+</div>
+<!-- Title & Archetype -->
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold group-hover:text-primary transition-colors">
+                Custom High-Performance B-Tree Storage Engine with WAL
+              </h3>
+<span class="font-code-sm text-code-sm text-tertiary block mt-1">Target Match: Google Bigtable &amp; Core File Storage</span>
+</div>
+<!-- Why Google Loves It -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md space-y-1">
+<span class="font-label-caps text-label-caps uppercase text-outline">Why Google Loves It</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Shows deep low-level mastery of disk block I/O, cache alignment, crash recovery via Write-Ahead Logging (WAL), strict ACID transactional semantics, and zero-leak C++ memory design.
+              </p>
+</div>
+<!-- Resume Impact Metric -->
+<div class="p-space-md rounded-lg bg-surface-container-high/60 space-y-1">
+<span class="font-label-caps text-label-caps uppercase text-primary font-semibold">Resume Bullet Prototype</span>
+<p class="font-code-sm text-code-sm text-on-surface leading-normal">
+                “Architected a B+Tree storage engine in C++20 with append-only WAL; achieved 180MB/s sequential write throughput using direct POSIX I/O and custom memory buffer pools.”
+              </p>
+</div>
+<!-- Tech Stack Chips -->
+<div class="space-y-1.5">
+<span class="font-label-caps text-label-caps uppercase text-outline">Tech Stack</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-code-sm text-code-sm">Modern C++20</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-code-sm text-code-sm">POSIX File APIs</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-code-sm text-code-sm">CMake</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-tertiary font-code-sm text-code-sm">Google Benchmark</span>
+</div>
+</div>
+</div>
+<!-- Bottom Action -->
+<div class="mt-space-lg pt-space-md">
+<button class="w-full py-2.5 px-space-md rounded-lg bg-surface-container-high text-on-surface hover:bg-primary-container hover:text-on-primary font-headline-sm text-headline-sm font-semibold transition-all flex items-center justify-center gap-2 shadow-sm" type="button">
+<span>View Blueprint &amp; Code Guide</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Project Card 3: Multi-Tenant Distributed Telemetry Engine -->
+<div class="bg-surface-container-low rounded-xl p-space-lg flex flex-col justify-between shadow-lg hover:shadow-xl hover:bg-surface-container transition-all group">
+<div class="space-y-space-md">
+<!-- Header Pill / Meta -->
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-tertiary/10 text-tertiary font-code-sm text-code-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> High-Scale Telemetry
+              </span>
+<span class="font-code-sm text-code-sm text-outline font-medium">Difficulty: Hard</span>
+</div>
+<!-- Title & Archetype -->
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold group-hover:text-primary transition-colors">
+                Multi-Tenant Real-Time Distributed Telemetry Engine
+              </h3>
+<span class="font-code-sm text-code-sm text-tertiary block mt-1">Target Match: Borgmon / Monarch / Site Reliability SWE</span>
+</div>
+<!-- Why Google Loves It -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md space-y-1">
+<span class="font-label-caps text-label-caps uppercase text-outline">Why Google Loves It</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Mirrors Google's foundational Borgmon and Monarch architecture. Demonstrates ability to collect, process, and query massive streams of time-series metric vectors asynchronously.
+              </p>
+</div>
+<!-- Resume Impact Metric -->
+<div class="p-space-md rounded-lg bg-surface-container-high/60 space-y-1">
+<span class="font-label-caps text-label-caps uppercase text-tertiary font-semibold">Resume Bullet Prototype</span>
+<p class="font-code-sm text-code-sm text-on-surface leading-normal">
+                “Built an asynchronous eBPF metric ingestion agent in Rust handling 1.2M events/sec per core; minimized kernel-user context switches with ring buffers and custom sliding windows.”
+              </p>
+</div>
+<!-- Tech Stack Chips -->
+<div class="space-y-1.5">
+<span class="font-label-caps text-label-caps uppercase text-outline">Tech Stack</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-code-sm text-code-sm">Rust</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-code-sm text-code-sm">Tokio Async</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-tertiary font-code-sm text-code-sm">eBPF</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-code-sm text-code-sm">Prometheus</span>
+</div>
+</div>
+</div>
+<!-- Bottom Action -->
+<div class="mt-space-lg pt-space-md">
+<button class="w-full py-2.5 px-space-md rounded-lg bg-surface-container-high text-on-surface hover:bg-primary-container hover:text-on-primary font-headline-sm text-headline-sm font-semibold transition-all flex items-center justify-center gap-2 shadow-sm" type="button">
+<span>View Blueprint &amp; Code Guide</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- 4. Google Interview Prep & Keyword Optimization Rubric -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Left Column: Recruiter Advice & Impact Visual -->
+<div class="lg:col-span-5 bg-surface-container-low rounded-xl p-space-lg flex flex-col justify-between shadow-lg">
+<div class="space-y-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="p-2 rounded-lg bg-error-container text-on-error">
+<span class="material-symbols-outlined text-lg">crisis_alert</span>
+</div>
+<div>
+<span class="font-label-caps text-label-caps uppercase text-outline">Hiring Intelligence</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">The Anti-Resume Filter</h3>
+</div>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-lowest text-on-surface-variant font-body-md text-body-md leading-relaxed">
+<span class="text-error font-semibold">Recruiter Reality:</span> Google recruiters filter out generic weather apps, basic CRUD dashboards, and simple todo lists within 6 seconds. A single systems or distributed project with benchmark numbers boosts interview callback rates by <span class="text-tertiary font-code-lg text-code-lg font-bold">4.2x</span>.
+          </div>
+<!-- Callback Lift Bar Graph (Inline SVG) -->
+<div class="bg-surface-container rounded-lg p-space-md space-y-space-sm">
+<div class="flex items-center justify-between text-code-sm font-code-sm">
+<span class="text-on-surface-variant">Interview Callback Probability</span>
+<span class="text-tertiary font-bold">+320% Delta</span>
+</div>
+<div class="space-y-2">
+<div>
+<div class="flex justify-between font-code-sm text-code-sm mb-1 text-outline">
+<span>Generic Coursework / Fullstack CRUD</span>
+<span>7.4%</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-2 overflow-hidden">
+<div class="bg-outline h-full rounded-full w-[7.4%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-code-sm text-code-sm mb-1 text-primary">
+<span>Distributed Consensus / Storage Engine + Benchmarks</span>
+<span class="font-bold">31.2%</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-2 overflow-hidden">
+<div class="bg-primary-container h-full rounded-full w-[31.2%]"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-md flex items-center justify-between">
+<span class="font-code-sm text-code-sm text-outline">Evaluated over 1,420 Berkeley/CMU/Waterloo applicants</span>
+<span class="material-symbols-outlined text-tertiary text-base">verified</span>
+</div>
+</div>
+<!-- Right Column: Keyword Optimization Rubric -->
+<div class="lg:col-span-7 bg-surface-container-low rounded-xl p-space-lg shadow-lg flex flex-col justify-between">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="p-2 rounded-lg bg-primary-container/20 text-primary">
+<span class="material-symbols-outlined text-lg">manage_search</span>
+</div>
+<div>
+<span class="font-label-caps text-label-caps uppercase text-outline">ATS &amp; Screener Rubric</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Google High-Priority Resume Keywords</h3>
+</div>
+</div>
+<span class="px-space-sm py-1 rounded bg-surface-container font-code-sm text-code-sm text-secondary">Updated Today</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Include these algorithmic and infrastructure terms naturally within bullet points describing performance, latency gains, and architecture trade-offs:
+          </p>
+<!-- Core Keyword Badges Array -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm pt-space-xs">
+<div class="p-space-md rounded-lg bg-surface-container flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-base mt-0.5">schema</span>
+<div>
+<div class="font-code-md text-code-md text-secondary font-bold">Distributed Consensus</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Raft, Paxos, heartbeat intervals, log truncation, dynamic membership.</div>
+</div>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container flex items-start gap-3">
+<span class="material-symbols-outlined text-tertiary text-base mt-0.5">speed</span>
+<div>
+<div class="font-code-md text-code-md text-tertiary font-bold">p99 Latency Optimization</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Tail-latency mitigations, thread pool sizing, lock-free ring buffers.</div>
+</div>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-base mt-0.5">swap_calls</span>
+<div>
+<div class="font-code-md text-code-md text-primary font-bold">gRPC Multiplexing</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">HTTP/2 streaming, bi-directional RPCs, binary Protobuf serialization.</div>
+</div>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-base mt-0.5">memory</span>
+<div>
+<div class="font-code-md text-code-md text-secondary font-bold">Memory Pooling &amp; Arena Alloc</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Avoiding garbage collection pauses, zero-copy buffers, cache locality.</div>
+</div>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container flex items-start gap-3 sm:col-span-2">
+<span class="material-symbols-outlined text-error text-base mt-0.5">bug_report</span>
+<div>
+<div class="font-code-md text-code-md text-error font-bold">Fault Injection &amp; Chaos Testing</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Partition synthesis, randomized latency drops, fuzzing state machine transitions.</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Action / Checker CTA -->
+<div class="mt-space-lg pt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm bg-surface-container-highest/40 p-space-md rounded-lg">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-xl">document_scanner</span>
+<span class="font-code-sm text-code-sm text-on-surface">Audit your resume for Google system keywords</span>
+</div>
+<button class="w-full sm:w-auto px-space-md py-1.5 rounded-lg bg-primary-container text-on-primary font-code-sm text-code-sm font-semibold hover:opacity-90 transition-opacity" type="button">
+            Run Keyword Matcher
+          </button>
+</div>
+</div>
+</div>
+<!-- Supplementary Real-Time Cohort Telemetry Bar -->
+<div class="w-full bg-surface-container-low rounded-xl p-space-md flex flex-col md:flex-row items-center justify-between gap-space-md shadow-md">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-xl">hub</span>
+</div>
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Active Google SWE Candidate Community</span>
+<p class="font-code-sm text-code-sm text-on-surface-variant">426 active applicants currently tracking Google Summer 2025 in InternTrack</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="flex -space-x-2 overflow-hidden">
+<img alt="Community member" class="inline-block h-8 w-8 rounded-full ring-2 ring-surface-container-low object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZgrTO-svYp7IS39bpkHa-zNAIb17wqGQCoZjBrc7IP9is6KplCDaouuydLSGWBqQyqQs7qLLhaBuYi0mvZCm1uUynTjIDLvsvEI6yUkAUaEtyy0jZvGE94YmjxUpj-ghOnbMVG_xwH2HO8Dle3WoKWwKYyk3OzGFgK80cTWj-2nock6U8okWUvNRVqfuCT53gvQnWs_RejNV5o1sLnYavq9DkOj4JHIuSD1tR8Rjz_UYOF7xsuUtIMg"/>
+<img alt="Community member" class="inline-block h-8 w-8 rounded-full ring-2 ring-surface-container-low object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoFMN-WEQjmTEMBiTcTWUfc1Do9jaDVhGUxEAXxV_kCcSRECCkjcehtyK_EdIdytYylBqHTASzwBGs2Xjr0HAHleZt_9qC9kr8uTPiwb0OqWkL4Xv5AZDpjNMEZitUx5Y93DX6L9yUvuGx5UJC_yGvN2Ui9N-i_JT7tnxxuTBiQnWmyUCabWCYiq0MAzpaMjvHyyjiq99lnDCpVgmn45TM-GKGr60Atmq-QMtupNPdUUbDP0oR7QlBsA"/>
+<img alt="Community member" class="inline-block h-8 w-8 rounded-full ring-2 ring-surface-container-low object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrHEb9ceoG2Fq3o-UI0rllyvhgt1DGSK9PYe4PQcE9IJll8Z65ir-HvcrCQ273ut_jkYhq-jjHDI5L6Z83IDz2tHOfv16DwXeNSN77YYGdQz-ubWM2JSlYE8Iw5F-FfJ-YUwe7fSVilYJX-JKv126bWwUpc2677fiEWZR8rHvOMELsfZFK_jMRkzhaxTiT8m2ng2Izo9SaPa2JgJNyzEX2CXnVvCHVew7PbhoCBCd0pXTD0fd1wjQ83g"/>
+<div class="h-8 w-8 rounded-full bg-surface-container text-on-surface-variant font-code-sm text-code-sm flex items-center justify-center ring-2 ring-surface-container-low">+423</div>
+</div>
+<button class="ml-2 px-space-md py-1.5 rounded-lg bg-surface-container font-code-sm text-code-sm text-on-surface hover:bg-surface-container-high transition-colors" type="button">
+          Join Slack Channel
+        </button>
+</div>
+</div>
+</div>
+<!-- Interactive Tab Switcher Script -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const tabs = document.querySelectorAll('#companyTabs button');
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          tabs.forEach(t => {
+            t.className = 'px-space-md py-2 rounded-lg bg-surface-container font-code-md text-code-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all flex items-center gap-2';
+            const dot = t.querySelector('span.w-2.h-2');
+            if (dot) dot.remove();
+          });
+          tab.className = 'px-space-md py-2 rounded-lg bg-primary-container text-on-primary font-code-md text-code-md font-semibold flex items-center gap-2 shadow-sm transition-all';
+          const newDot = document.createElement('span');
+          newDot.className = 'w-2 h-2 rounded-full bg-on-primary';
+          tab.prepend(newDot);
+        });
+      });
+    });
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest border-t border-outline-variant/20 py-space-lg mt-auto"><div class="w-full px-gutter flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><span class="font-code-sm text-code-sm text-on-surface-variant">© 2025 InternTrack Telemetry Engine</span><span class="text-outline-variant">•</span><span class="font-code-sm text-code-sm text-tertiary">v2.8.4-prod</span></div><div class="flex items-center gap-space-md font-code-sm text-code-sm text-on-surface-variant"><span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-tertiary"></span>Pipeline Latency: 14ms</span><span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-secondary"></span>FAANG Scraping: Online</span></div></div></footer></body></html>
